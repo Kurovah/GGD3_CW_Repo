@@ -1,0 +1,23 @@
+﻿  A subdirectory or file C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\Debug\Content already exists.
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\BasicEffect.cso
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\BasicEffect.fx
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\TextureMapping.cso
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\TextureMapping.fx
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\bench.3ds
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\tutFloor.obj
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\bench.jpg
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\grass.jpg
+  8 File(s) copied
+  ModelFromFile.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Program.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  RenderingGame.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  TriangleDemo.cpp
+  Generating Code...
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Game\RenderingGame.cpp(28,47): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Game\RenderingGame.cpp(28,47): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Game.vcxproj -> C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\Debug\Game.exe
+  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
+          1 file(s) copied.
