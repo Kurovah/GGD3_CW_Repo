@@ -13,13 +13,21 @@ namespace Library
 	class RenderStateHelper;
 	class Keyboard;
 	class Mouse;
-	
+	class FpsComponent;
 }
+
+namespace DirectX
+{
+	class SpriteBatch;
+	class SpriteFont;
+}
+
 
 namespace Rendering
 {
     class TriangleDemo;
 	class ModelFromFile;
+	class ObjectDiffuseLight;
 
     class RenderingGame : public Game
     {
@@ -43,5 +51,14 @@ namespace Rendering
 		Mouse* mMouse;
 		ModelFromFile* mModel;
 		ModelFromFile* floorModel;
+		ModelFromFile* gearModel;
+		FpsComponent* mFpsComponent;
+		RenderStateHelper* mRenderStateHelper;
+		ObjectDiffuseLight* mObjectDiffuseLight;
+		int mScore;
+		SpriteBatch* mSpriteBatch;
+		SpriteFont* mSpriteFont;
+	
+		void Pick(int sx, int sy, ModelFromFile*);
     };
 }

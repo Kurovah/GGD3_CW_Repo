@@ -1,6 +1,7 @@
 #pragma once
 
 #include "DrawableGameComponent.h"
+#include <DirectXCollision.h>
 
 using namespace Library;
 
@@ -17,32 +18,47 @@ namespace Rendering
 
 	public:
 		ModelFromFile(Game& game, Camera& camera, const std::string modelFilename, const std::string texFilename);
+		ModelFromFile(Game& game, Camera& camera, const std::string modelFilename, const std::string texFilename, const std::wstring modelDes, int modelValue);
 		~ModelFromFile();
 
 		virtual void Update(const GameTime& gameTime) override;
 
 
 		//add to support multiple model in the scene, remove this function
+		void SetPosition(const float rotateX, const float rotateY, 
+			const float rotateZ, const float scaleFactor, const float translateX, 
+			const float translateY, const float translateZ);
 
+		//bounding box require to access the world matrix
+
+		XMFLOAT4X4* WorldMatrix() { return &mWorldMatrix; }
+
+		//need to access this , make this public for simplicity
+		DirectX::BoundingBox mBoundingBox;
+		const std::wstring GetModelDes() { return modelDes; }
+		int const ModelValue() { return mModelValue; }
 		
 
 		
 		virtual void Initialize() override;
 		virtual void Draw(const GameTime& gameTime) override;
-		void SetPosition(const float rotateX, const float rotateY, 
-			const float rotateZ, const float scaleFactor, const float translateX, 
-			const float translateY, const float translateZ);
+		
 	private:
 		typedef struct _TextureMappingVertex
 		{
 			XMFLOAT4 Position;
 			XMFLOAT2 TextureCoordinates;
+			XMFLOAT4 Normal;
 
 			_TextureMappingVertex() { }
 
 			_TextureMappingVertex(XMFLOAT4 position, XMFLOAT2 textureCoordinates)
 				: Position(position), TextureCoordinates(textureCoordinates) { }
+
+			_TextureMappingVertex(XMFLOAT4 position, XMFLOAT2 textureCoordinates, XMFLOAT4 normal)
+				: Position(position), TextureCoordinates(textureCoordinates),Normal(normal) { }
 		} TextureMappingVertex;
+		
 
 		ModelFromFile();
 		ModelFromFile(const ModelFromFile& rhs);
@@ -68,7 +84,8 @@ namespace Rendering
 
 		const std::string modelFile;
 		const std::string texFile;
-	
+		std::wstring modelDes;
+		int mModelValue;
 
 	};
 }

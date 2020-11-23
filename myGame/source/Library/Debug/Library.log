@@ -2,6 +2,8 @@
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Camera.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  DirectionalLight.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   DrawableGameComponent.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Effect.cpp
@@ -12,21 +14,23 @@
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Game.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,40): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,40): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
   GameClock.cpp
   GameComponent.cpp
   GameException.cpp
   GameTime.cpp
   Keyboard.cpp
+  Light.cpp
   Material.cpp
   MatrixHelper.cpp
   Mesh.cpp
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(201,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         with
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         [
@@ -178,14 +182,20 @@ C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
   Mouse.cpp
-  Pass.cpp
-  RenderStateHelper.cpp
   Generating Code...
   Compiling...
+  Pass.cpp
+  ProxyModel.cpp
+  RasterizerStates.cpp
+  RenderStateHelper.cpp
+  SamplerStates.cpp
   ServiceContainer.cpp
   Technique.cpp
   Utility.cpp
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
