@@ -57,6 +57,11 @@ namespace Rendering
 		XMStoreFloat4x4(&mWorldMatrix, worldMatrix);
 	}
 
+	void ModelFromFile::SetPosition(XMFLOAT4X4 _matrix) 
+	{
+		XMMATRIX worldMatrix = XMLoadFloat4x4(&_matrix);
+		XMStoreFloat4x4(&mWorldMatrix, worldMatrix);
+	}
 
     void ModelFromFile::Initialize()
     {

@@ -29,6 +29,8 @@ namespace Rendering
 			const float rotateZ, const float scaleFactor, const float translateX, 
 			const float translateY, const float translateZ);
 
+		void SetPosition(XMFLOAT4X4 _matrix);
+
 		//bounding box require to access the world matrix
 
 		XMFLOAT4X4* WorldMatrix() { return &mWorldMatrix; }

@@ -8,6 +8,7 @@
 #include "ObjectDiffuseLight.h"
 #include "SamplerStates.h"
 #include "RasterizerStates.h"
+#include "Scene.h"
 //display score
 #include <SpriteFont.h>
 #include <sstream>
@@ -30,6 +31,10 @@ namespace Rendering
     RenderingGame::~RenderingGame()
     {
     }
+
+	void RenderingGame::ChangeScene(Scene _newScene) {
+
+	}
 
     void RenderingGame::Initialize()
     {
