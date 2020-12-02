@@ -3,9 +3,20 @@
 #include "MatrixHelper.h"
 
 namespace Rendering{
-	GameObject::GameObject(Game& _game, Camera& _camera):DrawableGameComponent(_game,_camera),model(nullptr),worldMatrix(MatrixHelper::Identity){
+	GameObject::GameObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale):DrawableGameComponent(_game,_camera),model(nullptr),worldMatrix(MatrixHelper::Identity){
+		//make initial matrix
+		XMMATRIX tempMatrix = XMLoadFloat4x4(&worldMatrix);
+		XMMATRIX trans = XMMatrixTranslation(translate.x, translate.y, translate.z);
+		XMMATRIX rotZ = XMMatrixRotationZ(rotation.z);
+		XMMATRIX rotY = XMMatrixRotationY(rotation.y);
+		XMMATRIX rotX = XMMatrixRotationX(rotation.x);
+		XMMATRIX Scale = XMMatrixScaling(scale, scale, scale);
+
+		tempMatrix = rotZ * rotX * rotY * Scale * trans;
+		XMStoreFloat4x4(&worldMatrix, tempMatrix);
+		//add model component
 		model = new ModelFromFile(_game, _camera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg");
-		//model->SetPosition(worldMatrix);
+		model->SetPosition(worldMatrix);
 	}
 
 	GameObject::~GameObject() {

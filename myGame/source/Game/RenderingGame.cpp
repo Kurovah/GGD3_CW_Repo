@@ -76,7 +76,10 @@ namespace Rendering
 		//floorModel->SetPosition(0.0f, -0.0f, -0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
 		mComponents.push_back(floorModel);
 
-		testObj = new GameObject(*this, *mCamera);
+
+		XMFLOAT3 testTrans = XMFLOAT3(0, 0, 0);
+		XMFLOAT3 testRot = XMFLOAT3(0, 0, 0);
+		testObj = new GameObject(*this, *mCamera, testTrans, testRot, 0.01f);
 		mComponents.push_back(testObj);
 
 		mFpsComponent = new FpsComponent(*this);
