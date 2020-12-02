@@ -9,6 +9,7 @@
 #include "SamplerStates.h"
 #include "RasterizerStates.h"
 #include "Scene.h"
+#include "GameObject.h"
 //display score
 #include <SpriteFont.h>
 #include <sstream>
@@ -22,7 +23,7 @@ namespace Rendering
     RenderingGame::RenderingGame(HINSTANCE instance, const std::wstring& windowClass, const std::wstring& windowTitle, int showCommand)
         :  Game(instance, windowClass, windowTitle, showCommand),
         mDemo(nullptr),mMouse(nullptr),mKeyboard(nullptr),mDirectInput(nullptr),mModel(nullptr),gearModel(nullptr),floorModel(nullptr),
-		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr)
+		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr),testObj(nullptr)
     {
         mDepthStencilBufferEnabled = true;
         mMultiSamplingEnabled = true;
@@ -31,10 +32,6 @@ namespace Rendering
     RenderingGame::~RenderingGame()
     {
     }
-
-	void RenderingGame::ChangeScene(Scene _newScene) {
-
-	}
 
     void RenderingGame::Initialize()
     {
@@ -76,8 +73,11 @@ namespace Rendering
 		mComponents.push_back(gearModel);
 
 		floorModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
-		floorModel->SetPosition(0.0f, -0.0f, -0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
+		//floorModel->SetPosition(0.0f, -0.0f, -0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
 		mComponents.push_back(floorModel);
+
+		testObj = new GameObject(*this, *mCamera);
+		mComponents.push_back(testObj);
 
 		mFpsComponent = new FpsComponent(*this);
 		mFpsComponent->Initialize();
@@ -108,6 +108,7 @@ namespace Rendering
 		DeleteObject(mObjectDiffuseLight);
 		DeleteObject(mSpriteFont);
 		DeleteObject(mSpriteBatch);
+		DeleteObject(testObj);
 
         Game::Shutdown();
     }

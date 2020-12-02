@@ -29,6 +29,7 @@ namespace Rendering
 	class ModelFromFile;
 	class ObjectDiffuseLight;
 	class Scene;
+	class GameObject;
 
     class RenderingGame : public Game
     {
@@ -39,7 +40,6 @@ namespace Rendering
         virtual void Initialize() override;		
         virtual void Update(const GameTime& gameTime) override;
         virtual void Draw(const GameTime& gameTime) override;
-		void ChangeScene(Scene _newScene);
 
     protected:
         virtual void Shutdown() override;
@@ -58,6 +58,9 @@ namespace Rendering
 		FpsComponent* mFpsComponent;
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
+
+		GameObject* testObj;
+
 		int mScore;
 		SpriteBatch* mSpriteBatch;
 		SpriteFont* mSpriteFont;

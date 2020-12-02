@@ -1,10 +1,17 @@
 #pragma once
-class Scene
-{
-	Scene();
-	~Scene();
+#include "Common.h"
+#include "GameObject.h"
+namespace Rendering{
+	class Scene
+	{
+	public:
+		std::vector<GameObject> objects;
 
-	void Load();
-	void UnLoad();
-};
+		Scene();
+		~Scene();
+
+		void Load();
+		void UnLoad();
+	};
+}
 
