@@ -25,18 +25,19 @@ namespace Rendering {
 
 	void PlayerObject::Update(const GameTime& gameTime)
 	{
-		XMFLOAT3 _vel = Vector3Helper::Zero;
+		float Speed = 0;
+		XMFLOAT3 _fv;
 		XMFLOAT3 _turnVel = Vector3Helper::Zero;
 		XMFLOAT2 _turnVel2D = Vector2Helper::Zero;
 		XMVECTOR _pos = XMLoadFloat3(&position);
 		XMVECTOR _rot = XMLoadFloat3(&rotation);
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 		if (keyboard->IsKeyDown(DIK_W)) {
-			_vel.z = 0.5f;
+			Speed = 1;
 		}
 
 		if (keyboard->IsKeyDown(DIK_S)) {
-			_vel.z = -0.5f;
+			Speed = -1;
 		}
 
 
@@ -53,23 +54,16 @@ namespace Rendering {
 		XMStoreFloat3(&rotation, _rot);*/
 
 		rotation.y += _turnVel.y * elapsedTime;
+		_fv = XMFLOAT3(sin(rotation.y), 0, cos(rotation.y));
 
-
-		XMVECTOR fVec = XMLoadFloat3(&forwardVec);
-		XMMATRIX pitchMatrix = XMMatrixRotationAxis(fVec, rotation.y);
+		XMVECTOR fVec = XMLoadFloat3(&_fv);
+		//XMMATRIX pitchMatrix = XMMatrixRotationAxis(fVec, rotation.y);
 		//fVec = XMVector3TransformNormal(fVec, pitchMatrix);
-		fVec = XMVector3Normalize(fVec);
 		
 		
-		XMStoreFloat3(&forwardVec, fVec);
-
-
 		
-		XMVECTOR movement = XMLoadFloat3(&_vel) * 10 * elapsedTime;
-		XMVECTOR forward = XMLoadFloat3(&forwardVec) * XMVectorGetZ(movement);
-		movement += forward;
-		
-		_pos += movement;
+		XMStoreFloat3(&forwardVec,  fVec);
+		_pos += fVec*Speed*elapsedTime;
 		XMStoreFloat3(&position, _pos);
 		
 		//position = position + velocity;
