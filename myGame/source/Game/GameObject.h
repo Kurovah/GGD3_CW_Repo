@@ -18,13 +18,13 @@ namespace Rendering {
 	protected:
 		ModelFromFile* model;
 		XMFLOAT3 position;
-		
-
-	private:
-		void SetPos(const float rotateX, const float rotateY, const float rotateZ,
-			const float scaleFactor,
-			const float translateX, const float translateY, const float translateZ);
+		XMFLOAT3 rotation;
+		bool staticObject;
 		virtual void Update(const GameTime& gameTime) override;
 		virtual void Draw(const GameTime& gameTime) override;
+
+	private:
+		void SetPos(XMFLOAT3 _pos, const float scaleFactor, XMFLOAT3 _rot);
+		
 	};
 }

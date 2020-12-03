@@ -30,6 +30,7 @@ namespace Rendering
 	class ObjectDiffuseLight;
 	class Scene;
 	class GameObject;
+	class PlayerObject;
 
     class RenderingGame : public Game
     {
@@ -59,7 +60,7 @@ namespace Rendering
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
 
-		GameObject* testObj;
+		PlayerObject* testObj;
 
 		int mScore;
 		SpriteBatch* mSpriteBatch;

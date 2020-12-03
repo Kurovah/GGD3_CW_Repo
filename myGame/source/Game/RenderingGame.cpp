@@ -10,6 +10,7 @@
 #include "RasterizerStates.h"
 #include "Scene.h"
 #include "GameObject.h"
+#include "PlayerObject.h"
 //display score
 #include <SpriteFont.h>
 #include <sstream>
@@ -79,7 +80,7 @@ namespace Rendering
 
 		XMFLOAT3 testTrans = XMFLOAT3(0, 0, 0);
 		XMFLOAT3 testRot = XMFLOAT3(0, 0, 0);
-		testObj = new GameObject(*this, *mCamera, testTrans, testRot, 0.01f);
+		testObj = new PlayerObject(*this, *mCamera, testTrans, testRot, 0.01f);
 		mComponents.push_back(testObj);
 
 		mFpsComponent = new FpsComponent(*this);
