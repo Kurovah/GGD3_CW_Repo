@@ -1,5 +1,10 @@
-﻿  FirstPersonCamera.cpp
+﻿  Camera.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  FirstPersonCamera.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  ProxyModel.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Generating Code...
   Library.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Libraryd.lib
   A subdirectory or file C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\lib\ already exists.
           1 file(s) copied.
