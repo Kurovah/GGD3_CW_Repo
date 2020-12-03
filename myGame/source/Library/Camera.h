@@ -52,6 +52,7 @@ namespace Library
         static const float DefaultNearPlaneDistance;
         static const float DefaultFarPlaneDistance;
 		XMFLOAT3 mDirection;
+		XMFLOAT3 mUp;
     protected:
         float mFieldOfView;
         float mAspectRatio;		
@@ -60,7 +61,7 @@ namespace Library
 
         XMFLOAT3 mPosition;
         
-        XMFLOAT3 mUp;
+        
         XMFLOAT3 mRight;
 
         XMFLOAT4X4 mViewMatrix;
