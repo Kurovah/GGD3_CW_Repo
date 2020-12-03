@@ -9,7 +9,7 @@
 
 namespace Rendering {
 	PlayerObject::PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale):GameObject(_game, _camera, translate, rotation, scale),
-		velocity(),keyboard(nullptr),forwardVec()
+		velocity(),keyboard(nullptr),forwardVec(),CamOffset()
 	{
 	}
 	PlayerObject::~PlayerObject()
@@ -21,6 +21,7 @@ namespace Rendering {
 	{
 		keyboard = (Keyboard*)mGame->Services().GetService(Keyboard::TypeIdClass());
 		forwardVec = Vector3Helper::Backward;
+		CamOffset = XMFLOAT2(1,1);
 		GameObject::Initialize();
 	}
 
@@ -56,9 +57,9 @@ namespace Rendering {
 		XMStoreFloat3(&position, _pos);
 
 		//for cam offset
-		XMFLOAT3 hOffset = XMFLOAT3(0, 1, 0);
+		XMFLOAT3 hOffset = XMFLOAT3(0, CamOffset.y, 0);
 		XMVECTOR yOffset = XMLoadFloat3(&hOffset);
-		_pos = _pos - fVec+yOffset;
+		_pos = _pos - (fVec* CamOffset.x)+yOffset;
 		mCamera->SetPosition(_pos);
 		mCamera->mDirection = _fv;
 		//position = position + velocity;

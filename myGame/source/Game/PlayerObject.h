@@ -16,7 +16,7 @@ namespace Rendering
 	public:
 		XMFLOAT3 velocity;
 		XMFLOAT3 forwardVec;
-		XMFLOAT3 CamOffset;
+		XMFLOAT2 CamOffset;
 		Keyboard* keyboard;
 		PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale);
 		~PlayerObject();
