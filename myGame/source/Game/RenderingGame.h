@@ -28,6 +28,9 @@ namespace Rendering
     class TriangleDemo;
 	class ModelFromFile;
 	class ObjectDiffuseLight;
+	class Scene;
+	class GameObject;
+	class PlayerObject;
 
     class RenderingGame : public Game
     {
@@ -44,6 +47,7 @@ namespace Rendering
 
     private:
 		static const XMFLOAT4 BackgroundColor;
+		Scene* currentScene;
         FirstPersonCamera * mCamera;
         TriangleDemo* mDemo;
 		LPDIRECTINPUT8 mDirectInput;
@@ -55,6 +59,9 @@ namespace Rendering
 		FpsComponent* mFpsComponent;
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
+
+		PlayerObject* testObj;
+
 		int mScore;
 		SpriteBatch* mSpriteBatch;
 		SpriteFont* mSpriteFont;
