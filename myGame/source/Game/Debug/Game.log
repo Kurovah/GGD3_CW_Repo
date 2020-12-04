@@ -1,26 +1,24 @@
-﻿  A subdirectory or file C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\Debug\Content already exists.
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\BasicEffect.cso
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\BasicEffect.fx
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\DiffuseLighting.fx
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\TextureMapping.cso
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\TextureMapping.fx
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Effects\include\Common.fxh
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\bench.3ds
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\DirectionalLightProxy.mtl
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\DirectionalLightProxy.obj
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\house.3DS
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\tutFloor.obj
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Models\weird.obj
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\bench.jpg
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\GearTex.001.png
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\grass.jpg
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\content\Textures\house.bmp
+﻿  A subdirectory or file C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content already exists.
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.cso
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\DiffuseLighting.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.cso
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\include\Common.fxh
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\bench.3ds
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
   17 File(s) copied
-  RenderingGame.cpp
+  PlayerObject.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Game\RenderingGame.cpp(37,47): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
-C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\source\Game\RenderingGame.cpp(46,82): warning C4305: 'argument': truncation from 'double' to 'const float'
-  Game.vcxproj -> C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\Debug\Game.exe
-  C:\Users\danny\Documents\UNI\Final Year\GGD3\6CCGD001WGameGroupProject\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
+  Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.

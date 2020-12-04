@@ -10,7 +10,7 @@ namespace Library
     RTTI_DEFINITIONS(FirstPersonCamera)
 
     const float FirstPersonCamera::DefaultRotationRate = XMConvertToRadians(1.0f);
-    const float FirstPersonCamera::DefaultMovementRate = 10.0f;
+    const float FirstPersonCamera::DefaultMovementRate = 00.0f;
     const float FirstPersonCamera::DefaultMouseSensitivity = 100.0f;
 
     FirstPersonCamera::FirstPersonCamera(Game& game)
@@ -147,7 +147,7 @@ namespace Library
         
 		actualMoveSpeed = XMVectorLerp(actualMoveSpeed, moveSpeed, elapsedTime);
 		
-
+		
 		position += actualMoveSpeed;
 		//this updates the position
         XMStoreFloat3(&mPosition, position);
