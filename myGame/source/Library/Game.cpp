@@ -384,6 +384,9 @@ namespace Library
         mDirect3DDeviceContext->RSSetViewports(1, &mViewport);
     }
 
+	void Game::AddObject(GameComponent* object) {
+		mComponents.push_back(object);
+	}
 
     LRESULT WINAPI Game::WndProc(HWND windowHandle, UINT message, WPARAM wParam, LPARAM lParam)
     {

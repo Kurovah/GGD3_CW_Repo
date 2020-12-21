@@ -38,6 +38,7 @@ namespace Library
         virtual void Initialize();		
         virtual void Update(const GameTime& gameTime);
         virtual void Draw(const GameTime& gameTime);
+		void AddObject(GameComponent* object);
 
 
 		static bool toPick;

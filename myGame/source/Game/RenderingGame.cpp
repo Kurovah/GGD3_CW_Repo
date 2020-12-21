@@ -24,8 +24,9 @@ namespace Rendering
     RenderingGame::RenderingGame(HINSTANCE instance, const std::wstring& windowClass, const std::wstring& windowTitle, int showCommand)
         :  Game(instance, windowClass, windowTitle, showCommand),
         mDemo(nullptr),mMouse(nullptr),mKeyboard(nullptr),mDirectInput(nullptr),mModel(nullptr),gearModel(nullptr),floorModel(nullptr),
-		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr),testObj(nullptr)
+		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr),testObj(nullptr),currentScene(nullptr)
     {
+		
         mDepthStencilBufferEnabled = true;
         mMultiSamplingEnabled = true;
     }
@@ -36,21 +37,13 @@ namespace Rendering
 
     void RenderingGame::Initialize()
     {
-		
+		//do common elements first
         mCamera = new FirstPersonCamera(*this);
         mComponents.push_back(mCamera);
         mServices.AddService(Camera::TypeIdClass(), mCamera);
-    
-        mDemo = new TriangleDemo(*this, *mCamera);
-        mComponents.push_back(mDemo);
 
-		//*/
-		mObjectDiffuseLight = new ObjectDiffuseLight(*this, *mCamera);
-		mObjectDiffuseLight->SetPosition(-1.57f, -0.0f, -0.0f, 0.01, -1.0f, 1.7f, -2.5f);
-		mComponents.push_back(mObjectDiffuseLight);
 		RasterizerStates::Initialize(mDirect3DDevice);
 		SamplerStates::Initialize(mDirect3DDevice);
-		/**/
 
 		if (FAILED(DirectInput8Create(mInstance, DIRECTINPUT_VERSION, IID_IDirectInput8, (LPVOID*)&mDirectInput, nullptr)))
 		{
@@ -64,10 +57,22 @@ namespace Rendering
 		mComponents.push_back(mMouse);
 		mServices.AddService(Mouse::TypeIdClass(), mMouse);
 
+		mFpsComponent = new FpsComponent(*this);
+		mFpsComponent->Initialize();
+		mRenderStateHelper = new RenderStateHelper(*this);
 
+		mSpriteBatch = new SpriteBatch(mDirect3DDeviceContext);
+		mSpriteFont = new SpriteFont(mDirect3DDevice, L"Content\\Fonts\\Arial_14_Regular.spritefont");
+
+
+		currentScene = new Scene(*this, *mCamera);
+
+		//add the scene based objects here (use the scene class)
+		currentScene->Load(*this);
 		mModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg");
 		mModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 5.0f, 0.6f, -5.0f);
-		mComponents.push_back(mModel);
+		AddObject(mModel);
+		//mComponents.push_back(mModel);
 
 		gearModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg",L"Descriptor goes here", 10);
 		gearModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 0.0f, 0.6f, -5.0f);
@@ -78,17 +83,12 @@ namespace Rendering
 		mComponents.push_back(floorModel);
 
 
-		XMFLOAT3 testTrans = XMFLOAT3(0, 0, 0);
+		/*XMFLOAT3 testTrans = XMFLOAT3(0, 0, 0);
 		XMFLOAT3 testRot = XMFLOAT3(0, 0, 0);
 		testObj = new PlayerObject(*this, *mCamera, testTrans, testRot, 0.01f);
-		mComponents.push_back(testObj);
+		mComponents.push_back(testObj);*/
 
-		mFpsComponent = new FpsComponent(*this);
-		mFpsComponent->Initialize();
-		mRenderStateHelper = new RenderStateHelper(*this);
-
-		mSpriteBatch = new SpriteBatch(mDirect3DDeviceContext);
-		mSpriteFont = new SpriteFont(mDirect3DDevice, L"Content\\Fonts\\Arial_14_Regular.spritefont");
+		
 
 
 
