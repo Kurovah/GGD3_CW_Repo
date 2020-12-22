@@ -9,7 +9,8 @@
 #include <cmath>
 
 namespace Rendering {
-	PlayerObject::PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale):GameObject(_game, _camera, translate, rotation, scale),
+	PlayerObject::PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath)
+		:GameObject(_game, _camera, translate, rotation, scale, _modelPath, _texturePath),
 		velocity(),keyboard(nullptr),forwardVec(),CamOffset()
 	{
 	}
@@ -21,6 +22,7 @@ namespace Rendering {
 	void PlayerObject::Initialize() 
 	{
 		keyboard = (Keyboard*)mGame->Services().GetService(Keyboard::TypeIdClass());
+		mCamera = (Camera*)mGame->Services().GetService(Camera::TypeIdClass());
 		forwardVec = Vector3Helper::Backward;
 		CamOffset = XMFLOAT2(4,2.5f);
 		velocity = 0;

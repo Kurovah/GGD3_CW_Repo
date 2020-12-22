@@ -11,7 +11,7 @@ namespace Rendering{
 	public:
 		std::vector<GameObject*> objects;
 
-		Scene(Game& game, Camera& camera);
+		Scene(Game& game, Camera& camera, int type);
 		~Scene();
 
 		virtual void Load(Game &game);

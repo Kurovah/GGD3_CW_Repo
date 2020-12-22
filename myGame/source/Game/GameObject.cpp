@@ -3,7 +3,7 @@
 #include "MatrixHelper.h"
 
 namespace Rendering{
-	GameObject::GameObject(Game& _game, Camera& _camera, XMFLOAT3 _translate, XMFLOAT3 _rotation, float scale):DrawableGameComponent(_game,_camera)
+	GameObject::GameObject(Game& _game, Camera& _camera, XMFLOAT3 _translate, XMFLOAT3 _rotation, float scale, std::string _modelPath, std::string _texturePath):DrawableGameComponent(_game,_camera)
 		,model(nullptr),worldMatrix(MatrixHelper::Identity),staticObject(false){
 		//init values
 		position = _translate;
@@ -19,7 +19,8 @@ namespace Rendering{
 		tempMatrix = rotZ * rotX * rotY * Scale * trans;
 		XMStoreFloat4x4(&worldMatrix, tempMatrix);
 		//add model component
-		model = new ModelFromFile(_game, _camera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg");
+		//"Content\\Models\\bench.3ds" "Content\\Textures\\bench.jpg"
+		model = new ModelFromFile(_game, _camera, _modelPath, _texturePath);
 		model->SetPosition(worldMatrix);
 	}
 

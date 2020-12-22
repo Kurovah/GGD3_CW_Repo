@@ -17,12 +17,29 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
   17 File(s) copied
+FXC : warning X4717: Effects deprecated for D3DCompiler_47
+  
+  compilation object save succeeded; see C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content\Effects\DiffuseLighting.cso
+  DiffuseLightingMaterial.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  GameObject.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  ModelFromFile.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  ObjectDiffuseLight.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  PlayerObject.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Program.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   RenderingGame.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Scene.cpp
+  TriangleDemo.cpp
   Generating Code...
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(41,47): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(41,47): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(88,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(88,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(88,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.

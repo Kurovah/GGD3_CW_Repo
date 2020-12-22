@@ -19,7 +19,7 @@ namespace Rendering
 		XMFLOAT3 forwardVec;
 		XMFLOAT2 CamOffset;
 		Keyboard* keyboard;
-		PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale);
+		PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath);
 		~PlayerObject();
 		virtual void Initialize() override;
 		virtual void Update(const GameTime& gameTime) override;
