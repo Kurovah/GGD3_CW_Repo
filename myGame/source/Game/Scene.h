@@ -19,6 +19,7 @@ namespace Rendering{
 
 		PlayerObject* player;
 		GameObject* testObj;
+		GameObject* testFloor;
 	};
 }
 

@@ -15,11 +15,10 @@ namespace Rendering{
 		XMMATRIX rotY = XMMatrixRotationY(rotation.y);
 		XMMATRIX rotX = XMMatrixRotationX(rotation.x);
 		XMMATRIX Scale = XMMatrixScaling(scale, scale, scale);
-
+		modelScale = scale;
 		tempMatrix = rotZ * rotX * rotY * Scale * trans;
 		XMStoreFloat4x4(&worldMatrix, tempMatrix);
 		//add model component
-		//"Content\\Models\\bench.3ds" "Content\\Textures\\bench.jpg"
 		model = new ModelFromFile(_game, _camera, _modelPath, _texturePath);
 		model->SetPosition(worldMatrix);
 	}
@@ -33,7 +32,8 @@ namespace Rendering{
 	void GameObject::Update(const GameTime& gameTime)
 	{
 		//update the object
-		SetPos(position, 0.01f, rotation);
+		SetPos(position,modelScale, rotation);
+		//SetPos(position,0.01f, rotation);
 		//update the model
 		if (model != nullptr) {
 			model->SetPosition(worldMatrix);

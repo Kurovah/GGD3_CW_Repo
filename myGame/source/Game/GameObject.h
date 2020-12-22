@@ -19,6 +19,7 @@ namespace Rendering {
 		ModelFromFile* model;
 		XMFLOAT3 position;
 		XMFLOAT3 rotation;
+		float modelScale;
 		bool staticObject;
 		virtual void Update(const GameTime& gameTime) override;
 		virtual void Draw(const GameTime& gameTime) override;
