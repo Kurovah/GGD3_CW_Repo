@@ -7,6 +7,8 @@ namespace Rendering{
 		CollisionLine(DirectX::XMFLOAT3 p1, DirectX::XMFLOAT3 p2);
 		DirectX::XMFLOAT3 point1;
 		DirectX::XMFLOAT3 point2;
+		DirectX::XMFLOAT3 normal;
+		DirectX::XMFLOAT3 iNormal;
 	};
 }
 

@@ -30,7 +30,8 @@ namespace Rendering
 		float lerp(float a, float b, float f);
 		bool checkTouching(CollisionLine& _line);
 		float GetOffset(CollisionLine& _line);
-		void ResolveCollision(CollisionLine& _line, XMVECTOR& _newPos);
+		float DotProduct(XMFLOAT3 _a, XMFLOAT3 _b);
+		void ResolveCollision(CollisionLine& _line);
 		float Distance(XMFLOAT3 _a, XMFLOAT3 _b);
 	};
 }

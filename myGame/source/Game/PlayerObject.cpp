@@ -68,17 +68,19 @@ namespace Rendering {
 		XMStoreFloat3(&forwardVec,  fVec);
 		_pos += fVec* velocity *elapsedTime;
 		
-		for (CollisionLine* _col : colliders)
-		{
-			if (checkTouching(*_col)) {
-				XMFLOAT3 ori = XMFLOAT3(0, 0, 0);
-				_pos = XMLoadFloat3(&ori);
-				/*ResolveCollision(*_col, _pos);*/
-			}
-		}
+		
 		
 
 		XMStoreFloat3(&position, _pos);
+
+		for (CollisionLine* _col : colliders)
+		{
+			if (checkTouching(*_col)) {
+				/*XMFLOAT3 ori = XMFLOAT3(0, 0, 0);
+				_pos = XMLoadFloat3(&ori);*/
+				ResolveCollision(*_col);
+			}
+		}
 
 		//for cam offset
 		XMFLOAT3 hOffset = XMFLOAT3(0, CamOffset.y, 0);
@@ -109,20 +111,19 @@ namespace Rendering {
 		float b = Distance(position,_line.point2);
 		float c = Distance(_line.point1,_line.point2);
 		float x = (a + b + c) / 2;
-		float h = (2 * std::sqrt(x*(x-a)*(x-b)*(x-c)))/c;
+		float h = std::abs((2 * std::sqrt(x*(x-a)*(x-b)*(x-c)))/c);
 
 		
 		return h < colRadius;
 	}
 
-	void PlayerObject::ResolveCollision(CollisionLine& _line, XMVECTOR& _newPos) {
-		XMFLOAT3 AVector = XMFLOAT3(position.x - _line.point1.x, 0, position.z - _line.point1.z);
-		XMFLOAT3 BVector = XMFLOAT3(position.x - _line.point1.x, 0, position.z - _line.point1.z);
-		XMFLOAT3 resVector = XMFLOAT3(AVector.x + BVector.x, 0, AVector.z + BVector.z);
+	void PlayerObject::ResolveCollision(CollisionLine& _line) {
+		XMVECTOR res= XMLoadFloat3(&_line.normal);
 		XMVECTOR pos = XMLoadFloat3(&position);
-		XMVECTOR res = XMLoadFloat3(&resVector);
-		res = XMVector3Normalize(res) * 0.5f;
-		_newPos += res;
+		
+		res = XMVector3Normalize(res) * GetOffset(_line);
+		pos += res;
+		XMStoreFloat3(&position, pos);
 	}
 
 	float PlayerObject::GetOffset(CollisionLine& _line) {
@@ -130,15 +131,23 @@ namespace Rendering {
 		float b = Distance(position, _line.point2);
 		float c = Distance(_line.point1, _line.point2);
 		float x = (a + b + c) / 2;
-		float h = (2 * std::sqrt(x * (x - a) * (x - b) * (x - c))) / c;
+		float h = std::abs((2 * std::sqrt(x * (x - a) * (x - b) * (x - c))) / c);
 
 
-		return h - colRadius;
+		return  std::abs(h - colRadius);
+	}
+
+	float PlayerObject::DotProduct(XMFLOAT3 _a, XMFLOAT3 _b) {
+		return _a.x * _b.x + _a.y *_b.y + _a.z + _b.z;
 	}
 
 	float PlayerObject::Distance(XMFLOAT3 _a, XMFLOAT3 _b) {
-		return std::sqrt((_a.x - _b.x) * (_a.x - _b.x) +
-			(_a.y - _b.y) * (_a.y - _b.y) +
-			(_a.z - _b.z) * (_a.z - _b.z));
+		return std::abs( 
+				std::sqrt(
+					(_a.x - _b.x) * (_a.x - _b.x) +
+					(_a.y - _b.y) * (_a.y - _b.y) +
+					(_a.z - _b.z) * (_a.z - _b.z)
+				)
+			);
 	}
 }
