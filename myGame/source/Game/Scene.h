@@ -2,9 +2,12 @@
 #include "Common.h"
 #include "GameObject.h"
 #include "Game.h"
+#include "CollisionLine.h"
+
 namespace Rendering{
 	class GameObject;
 	class PlayerObject;
+	class CollisionLine;
 
 	class Scene
 	{
@@ -20,6 +23,7 @@ namespace Rendering{
 		PlayerObject* player;
 		GameObject* testObj;
 		GameObject* testFloor;
+		std::vector<CollisionLine*> collisionPoints;
 	};
 }
 

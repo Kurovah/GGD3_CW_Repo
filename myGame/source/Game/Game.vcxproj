@@ -153,6 +153,7 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CollisionLine.cpp" />
     <ClCompile Include="DiffuseLightingMaterial.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="ModelFromFile.cpp" />
@@ -164,6 +165,7 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
     <ClCompile Include="TriangleDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CollisionLine.h" />
     <ClInclude Include="DiffuseLightingMaterial.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="ModelFromFile.h" />

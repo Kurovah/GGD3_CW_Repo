@@ -31,6 +31,7 @@ namespace Rendering
 	class Scene;
 	class GameObject;
 	class PlayerObject;
+	class CollisionLine;
 
     class RenderingGame : public Game
     {
@@ -43,6 +44,8 @@ namespace Rendering
         virtual void Draw(const GameTime& gameTime) override;
 		void ChangeScene(Scene* newScene);
 		void AddCommonElements();
+		std::vector<CollisionLine*> colLines;
+
 
     protected:
         virtual void Shutdown() override;
@@ -64,6 +67,7 @@ namespace Rendering
 		ObjectDiffuseLight* mObjectDiffuseLight;
 		bool ChangeRequest;
 		PlayerObject* testObj;
+		
 
 		int mScore;
 		SpriteBatch* mSpriteBatch;
