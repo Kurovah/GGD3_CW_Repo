@@ -47,6 +47,23 @@ SamplerState ColorSampler
 	AddressV = WRAP;
 };
 
+//Sky Box Resources
+TextureCube SkyboxTexture <
+	string UIName = "Skybox Texture";
+	string ResourceType = "3D";
+	>;
+
+SamplerState TrilinearSampler
+{
+	Filter = MIN_MAG_MIP_LINEAR;
+};
+
+RasterizerState DisableCulling
+{
+	CullMode = None;
+};
+
+
 /************* Data Structures *************/
 
 struct VS_INPUT
@@ -72,6 +89,7 @@ VS_OUTPUT vertex_shader(VS_INPUT IN)
 	VS_OUTPUT OUT = (VS_OUTPUT)0;
 	OUT.Position = mul(IN.ObjectPosition, WorldViewProjection);
 	OUT.TextureCoordinate = get_corrected_texture_coordinate(IN.TextureCoordinate);
+	/*OUT.TextureCoordinate = IN.ObjectPosition;*/
 	OUT.Normal = normalize(mul(float4(IN.Normal, 0), World).xyz);
 	OUT.LightDirection = normalize(-LightDirection);
 
@@ -99,8 +117,20 @@ float4 pixel_shader(VS_OUTPUT IN) : SV_Target
 	OUT.rgb = ambient + diffuse;
 	OUT.a = color.a;
 	return OUT;
+	/*return SkyboxTexture.Sample(TrilinearSampler,
+		IN.TextureCoordinate);*/
 
 }
+
+////Pixel shader for skybox//
+//float4 pixel_shader(VS_OUTPUT IN) : SV_TARGET
+//{
+//	return SkyboxTexture.Sample(TrilinearSampler,
+//	IN.TextureCoordinate);
+//}
+
+
+
 
 /************* Techniques *************/
 
@@ -113,3 +143,16 @@ technique11 main11
         SetPixelShader(CompileShader(ps_5_0, pixel_shader()));
     }
 }
+
+/**Techniques for skybox**/
+technique10 main10
+{
+	pass p0
+	{
+		SetVertexShader(CompileShader(vs_4_0, vertex_shader()));
+		SetGeometryShader(NULL);
+		SetPixelShader(CompileShader(ps_4_0, pixel_shader()));
+
+		SetRasterizerState(DisableCulling);
+	}
+};

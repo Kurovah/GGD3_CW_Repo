@@ -170,6 +170,7 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
     <ClInclude Include="ObjectDiffuseLight.h" />
     <ClInclude Include="PlayerObject.h" />
     <ClInclude Include="RenderingGame.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="TriangleDemo.h" />
   </ItemGroup>
@@ -179,6 +180,9 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\Content\Effects\%(Filename).cso</ObjectFileOutput>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -127,7 +127,7 @@ namespace Rendering
 		ReleaseObject(mDirectInput);
         Game::Update(gameTime);
 
-		if (Game::toPick)
+		/*if (Game::toPick)
 		{
 
 			if (gearModel->Visible())
@@ -136,47 +136,47 @@ namespace Rendering
 
 
 			Game::toPick = false;
-		}
+		}*/
     }
 
-	void RenderingGame::Pick(int sx, int sy, ModelFromFile* model)
-	{
-		//XMMATRIX P = mCam.Proj(); 
-		XMFLOAT4X4 P;
-		XMStoreFloat4x4(&P, mCamera->ProjectionMatrix());
-		//Compute picking ray in view space.
-		float vx = (+2.0f * sx / Game::DefaultScreenWidth - 1.0f) / P(0, 0);
-		float vy = (-2.0f * sy / Game::DefaultScreenHeight + 1.0f) / P(1, 1);
-		// Ray definition in view space.
-		XMVECTOR rayOrigin = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
-		XMVECTOR rayDir = XMVectorSet(vx, vy, -1.0f, 0.0f);
-		// Tranform ray to local space of Mesh via the inverse of both of view and world transform
-		XMMATRIX V = mCamera->ViewMatrix();
-		XMMATRIX invView = XMMatrixInverse(&XMMatrixDeterminant(V), V);
-		XMMATRIX W = XMLoadFloat4x4(model->WorldMatrix());
-		XMMATRIX invWorld = XMMatrixInverse(&XMMatrixDeterminant(W), W);
-		XMMATRIX toLocal = XMMatrixMultiply(invView, invWorld);
-		rayOrigin = XMVector3TransformCoord(rayOrigin, toLocal);
-		rayDir = XMVector3TransformNormal(rayDir, toLocal);
+	//void RenderingGame::Pick(int sx, int sy, ModelFromFile* model)
+	//{
+	//	//XMMATRIX P = mCam.Proj(); 
+	//	XMFLOAT4X4 P;
+	//	XMStoreFloat4x4(&P, mCamera->ProjectionMatrix());
+	//	//Compute picking ray in view space.
+	//	float vx = (+2.0f * sx / Game::DefaultScreenWidth - 1.0f) / P(0, 0);
+	//	float vy = (-2.0f * sy / Game::DefaultScreenHeight + 1.0f) / P(1, 1);
+	//	// Ray definition in view space.
+	//	XMVECTOR rayOrigin = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
+	//	XMVECTOR rayDir = XMVectorSet(vx, vy, -1.0f, 0.0f);
+	//	// Tranform ray to local space of Mesh via the inverse of both of view and world transform
+	//	XMMATRIX V = mCamera->ViewMatrix();
+	//	XMMATRIX invView = XMMatrixInverse(&XMMatrixDeterminant(V), V);
+	//	XMMATRIX W = XMLoadFloat4x4(model->WorldMatrix());
+	//	XMMATRIX invWorld = XMMatrixInverse(&XMMatrixDeterminant(W), W);
+	//	XMMATRIX toLocal = XMMatrixMultiply(invView, invWorld);
+	//	rayOrigin = XMVector3TransformCoord(rayOrigin, toLocal);
+	//	rayDir = XMVector3TransformNormal(rayDir, toLocal);
 
-		// Make the ray direction unit length for the intersection tests.
-		rayDir = XMVector3Normalize(rayDir);
-		float tmin = 0.0;
-		if (model->mBoundingBox.Intersects(rayOrigin, rayDir, tmin))
-		{
-			std::wostringstream pickupString;
-			pickupString << L"Do you want to pick up: " << (model->GetModelDes()).c_str() << '\n' << '\t' << '+' << model->ModelValue() << L" points";
-			int result = MessageBox(0, pickupString.str().c_str(), L"Object Found", MB_ICONASTERISK | MB_YESNO);
+	//	// Make the ray direction unit length for the intersection tests.
+	//	rayDir = XMVector3Normalize(rayDir);
+	//	float tmin = 0.0;
+	//	if (model->mBoundingBox.Intersects(rayOrigin, rayDir, tmin))
+	//	{
+	//		std::wostringstream pickupString;
+	//		pickupString << L"Do you want to pick up: " << (model->GetModelDes()).c_str() << '\n' << '\t' << '+' << model->ModelValue() << L" points";
+	//		int result = MessageBox(0, pickupString.str().c_str(), L"Object Found", MB_ICONASTERISK | MB_YESNO);
 
-			//To make the object invisible after being picked, in the Pick function, add the following code:
-			if (result == IDYES)
-			{ //hide the object
-				model->SetVisible(false);
-				//update the score
-				mScore += model->ModelValue();
-			}
-		}
-	}
+	//		//To make the object invisible after being picked, in the Pick function, add the following code:
+	//		if (result == IDYES)
+	//		{ //hide the object
+	//			model->SetVisible(false);
+	//			//update the score
+	//			mScore += model->ModelValue();
+	//		}
+	//	}
+	//}
 
     void RenderingGame::Draw(const GameTime &gameTime)
     {
