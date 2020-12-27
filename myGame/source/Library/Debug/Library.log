@@ -1,10 +1,4 @@
-﻿  BasicMaterial.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Camera.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  DirectionalLight.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  DrawableGameComponent.cpp
+﻿  Camera.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Effect.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
@@ -14,238 +8,123 @@
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Game.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,40): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,54): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
-  GameClock.cpp
-  GameComponent.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  GameException.cpp
-  GameTime.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,40): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
   Keyboard.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Light.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Material.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  MatrixHelper.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Mesh.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message : while compiling class template member function 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message : see reference to function template instantiation 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(107): message : see reference to class template instantiation 'aiQuaterniont<float>' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244: 'return': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message : while compiling class template member function 'TReal aiVector3t<TReal>::Length(void) const'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message : see reference to function template instantiation 'TReal aiVector3t<TReal>::Length(void) const' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,54): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Library\Game.cpp(205,54): warning C4838: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message : while compiling class template member function 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message : see reference to function template instantiation 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(107): message : see reference to class template instantiation 'aiQuaterniont<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244: 'return': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message : while compiling class template member function 'TReal aiVector3t<TReal>::Length(void) const'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message : see reference to function template instantiation 'TReal aiVector3t<TReal>::Length(void) const' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
   Model.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message : while compiling class template member function 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message : see reference to function template instantiation 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(107): message : see reference to class template instantiation 'aiQuaterniont<float>' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244: 'return': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message : while compiling class template member function 'TReal aiVector3t<TReal>::Length(void) const'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message : see reference to function template instantiation 'TReal aiVector3t<TReal>::Length(void) const' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
-  ModelMaterial.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message : while compiling class template member function 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message : see reference to function template instantiation 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(107): message : see reference to class template instantiation 'aiQuaterniont<float>' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244: 'return': conversion from 'double' to 'TReal', possible loss of data
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message : while compiling class template member function 'TReal aiVector3t<TReal>::Length(void) const'
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message : see reference to function template instantiation 'TReal aiVector3t<TReal>::Length(void) const' being compiled
-          with
-          [
-              TReal=float
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(207,15): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message : while compiling class template member function 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(186): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message : see reference to function template instantiation 'void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(435): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(107): message : see reference to class template instantiation 'aiQuaterniont<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(208,14): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(209,61): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244: '=': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\quaternion.inl(210,33): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244: 'return': conversion from 'double' to 'TReal', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(93,13): warning C4244:         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message : while compiling class template member function 'TReal aiVector3t<TReal>::Length(void) const'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(92): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message : see reference to function template instantiation 'TReal aiVector3t<TReal>::Length(void) const' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         with
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         [
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :             TReal=float
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(98): message :         ]
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\vector3.inl(142): message : while compiling class template member function 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\anim.h(82): message : see reference to function template instantiation 'bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const' being compiled
   Mouse.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
-  Compiling...
   Pass.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   ProxyModel.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  RasterizerStates.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   RenderStateHelper.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  SamplerStates.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  ServiceContainer.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Technique.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Utility.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include\xstring(2468,23): warning C4244: 'argument': conversion from 'wchar_t' to 'const _Elem', possible loss of data
-          with
-          [
-              _Elem=char
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include\xstring(2479): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
-          with
-          [
-              _Iter=wchar_t *
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include\xstring(2479): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
-          with
-          [
-              _Iter=wchar_t *
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include\xstring(2459): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
-          with
-          [
-              _Iter=wchar_t *
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include\xstring(2459): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
-          with
-          [
-              _Iter=wchar_t *
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\source\Library\Utility.cpp(15): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
-          with
-          [
-              _Elem=wchar_t,
-              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
-              _Alloc=std::allocator<char>
-          ]
-C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\source\Library\Utility.cpp(15): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
-          with
-          [
-              _Elem=wchar_t,
-              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
-              _Alloc=std::allocator<char>
-          ]
-  Variable.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  VectorHelper.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Generating Code...
-  Library.vcxproj -> C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Libraryd.lib
-  A subdirectory or file C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\lib\ already exists.
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : see reference to class template instantiation 'aiVector3t<float>' being compiled
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\external\assimp\include\assimp\types.h(151): message : C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Library.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Libraryd.lib
+  A subdirectory or file C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\lib\ already exists.
           1 file(s) copied.

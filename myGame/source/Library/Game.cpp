@@ -4,8 +4,8 @@
 
 namespace Library
 {
-    const UINT Game::DefaultScreenWidth = 1024;
-    const UINT Game::DefaultScreenHeight = 768;
+    const UINT Game::DefaultScreenWidth = 1280;
+    const UINT Game::DefaultScreenHeight = 720;
     const UINT Game::DefaultFrameRate = 60;
     const UINT Game::DefaultMultiSamplingCount = 4;	
 	bool Game::toPick = false;
@@ -384,6 +384,9 @@ namespace Library
         mDirect3DDeviceContext->RSSetViewports(1, &mViewport);
     }
 
+	void Game::AddObject(GameComponent* object) {
+		mComponents.push_back(object);
+	}
 
     LRESULT WINAPI Game::WndProc(HWND windowHandle, UINT message, WPARAM wParam, LPARAM lParam)
     {

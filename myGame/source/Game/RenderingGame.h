@@ -31,6 +31,7 @@ namespace Rendering
 	class Scene;
 	class GameObject;
 	class PlayerObject;
+	class CollisionLine;
 
     class RenderingGame : public Game
     {
@@ -41,6 +42,10 @@ namespace Rendering
         virtual void Initialize() override;		
         virtual void Update(const GameTime& gameTime) override;
         virtual void Draw(const GameTime& gameTime) override;
+		void ChangeScene(Scene* newScene);
+		void AddCommonElements();
+		std::vector<CollisionLine*> colLines;
+
 
     protected:
         virtual void Shutdown() override;
@@ -48,7 +53,8 @@ namespace Rendering
     private:
 		static const XMFLOAT4 BackgroundColor;
 		Scene* currentScene;
-        FirstPersonCamera * mCamera;
+		Scene* nextScene;
+		FirstPersonCamera* mCamera;
         TriangleDemo* mDemo;
 		LPDIRECTINPUT8 mDirectInput;
 		Keyboard* mKeyboard;
@@ -59,8 +65,9 @@ namespace Rendering
 		FpsComponent* mFpsComponent;
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
-
+		bool ChangeRequest;
 		PlayerObject* testObj;
+		
 
 		int mScore;
 		SpriteBatch* mSpriteBatch;

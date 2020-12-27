@@ -45,6 +45,9 @@
     <ClCompile Include="PlayerObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CollisionLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ModelFromFile.h">
@@ -71,7 +74,7 @@
     <ClInclude Include="PlayerObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="CollisionLine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -79,10 +82,5 @@
     <FxCompile Include="..\..\content\Effects\DiffuseLighting.fx">
       <Filter>Shader</Filter>
     </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Game.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>

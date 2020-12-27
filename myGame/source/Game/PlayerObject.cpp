@@ -5,13 +5,17 @@
 #include "Keyboard.h"
 #include "Camera.h"
 #include "VectorHelper.h"
+#include "CollisionLine.h"
 #include <iostream>
 #include <cmath>
 
 namespace Rendering {
-	PlayerObject::PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale):GameObject(_game, _camera, translate, rotation, scale),
+	PlayerObject::PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath, std::vector<CollisionLine*> _colliders)
+		:GameObject(_game, _camera, translate, rotation, scale, _modelPath, _texturePath),
 		velocity(),keyboard(nullptr),forwardVec(),CamOffset()
 	{
+		colRadius = 1;
+		colliders = _colliders;
 	}
 	PlayerObject::~PlayerObject()
 	{
@@ -21,6 +25,7 @@ namespace Rendering {
 	void PlayerObject::Initialize() 
 	{
 		keyboard = (Keyboard*)mGame->Services().GetService(Keyboard::TypeIdClass());
+		mCamera = (Camera*)mGame->Services().GetService(Camera::TypeIdClass());
 		forwardVec = Vector3Helper::Backward;
 		CamOffset = XMFLOAT2(4,2.5f);
 		velocity = 0;
@@ -62,7 +67,20 @@ namespace Rendering {
 		XMVECTOR fVec = XMLoadFloat3(&_fv);
 		XMStoreFloat3(&forwardVec,  fVec);
 		_pos += fVec* velocity *elapsedTime;
+		
+		
+		
+
 		XMStoreFloat3(&position, _pos);
+
+		for (CollisionLine* _col : colliders)
+		{
+			if (checkTouching(*_col)) {
+				/*XMFLOAT3 ori = XMFLOAT3(0, 0, 0);
+				_pos = XMLoadFloat3(&ori);*/
+				ResolveCollision(*_col);
+			}
+		}
 
 		//for cam offset
 		XMFLOAT3 hOffset = XMFLOAT3(0, CamOffset.y, 0);
@@ -86,5 +104,50 @@ namespace Rendering {
 	float PlayerObject::lerp(float a, float b, float f)
 	{
 		return a + f * (b - a);
+	}
+
+	bool PlayerObject::checkTouching(CollisionLine& _line) {
+		float a = Distance(position,_line.point1);
+		float b = Distance(position,_line.point2);
+		float c = Distance(_line.point1,_line.point2);
+		float x = (a + b + c) / 2;
+		float h = std::abs((2 * std::sqrt(x*(x-a)*(x-b)*(x-c)))/c);
+
+		
+		return h < colRadius;
+	}
+
+	void PlayerObject::ResolveCollision(CollisionLine& _line) {
+		XMVECTOR res= XMLoadFloat3(&_line.normal);
+		XMVECTOR pos = XMLoadFloat3(&position);
+		
+		res = XMVector3Normalize(res) * GetOffset(_line);
+		pos += res;
+		XMStoreFloat3(&position, pos);
+	}
+
+	float PlayerObject::GetOffset(CollisionLine& _line) {
+		float a = Distance(position, _line.point1);
+		float b = Distance(position, _line.point2);
+		float c = Distance(_line.point1, _line.point2);
+		float x = (a + b + c) / 2;
+		float h = std::abs((2 * std::sqrt(x * (x - a) * (x - b) * (x - c))) / c);
+
+
+		return  std::abs(h - colRadius);
+	}
+
+	float PlayerObject::DotProduct(XMFLOAT3 _a, XMFLOAT3 _b) {
+		return _a.x * _b.x + _a.y *_b.y + _a.z + _b.z;
+	}
+
+	float PlayerObject::Distance(XMFLOAT3 _a, XMFLOAT3 _b) {
+		return std::abs( 
+				std::sqrt(
+					(_a.x - _b.x) * (_a.x - _b.x) +
+					(_a.y - _b.y) * (_a.y - _b.y) +
+					(_a.z - _b.z) * (_a.z - _b.z)
+				)
+			);
 	}
 }

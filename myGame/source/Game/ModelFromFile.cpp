@@ -53,7 +53,6 @@ namespace Rendering
 		XMMATRIX Scale = XMMatrixScaling(scaleFactor, scaleFactor, scaleFactor);
 		XMMATRIX Translation = XMMatrixTranslation(translateX, translateY, translateZ);
 		worldMatrix = RotationZ * RotationX *RotationY* Scale * Translation;
-
 		XMStoreFloat4x4(&mWorldMatrix, worldMatrix);
 	}
 
