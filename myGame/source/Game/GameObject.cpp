@@ -4,7 +4,7 @@
 
 namespace Rendering{
 	GameObject::GameObject(Game& _game, Camera& _camera, XMFLOAT3 _translate, XMFLOAT3 _rotation, float scale, std::string _modelPath, std::string _texturePath):DrawableGameComponent(_game,_camera)
-		,model(nullptr),worldMatrix(MatrixHelper::Identity),staticObject(false){
+		,model(nullptr),worldMatrix(MatrixHelper::Identity){
 		//init values
 		position = _translate;
 		rotation = _rotation;
@@ -21,6 +21,11 @@ namespace Rendering{
 		//add model component
 		model = new ModelFromFile(_game, _camera, _modelPath, _texturePath);
 		model->SetPosition(worldMatrix);
+	}
+
+	GameObject::GameObject(Game& _game, Camera& _camera) :DrawableGameComponent(_game, _camera)
+		, model(nullptr), worldMatrix(MatrixHelper::Identity) {
+		
 	}
 
 	GameObject::~GameObject() {
@@ -56,6 +61,7 @@ namespace Rendering{
 
 
 	void GameObject::Initialize() {
+
 		model->Initialize();
 	}
 
@@ -64,6 +70,12 @@ namespace Rendering{
 		if (model != nullptr) {
 			model->Draw(gameTime);
 		}
+	}
+
+	void GameObject::Disable() {
+		model->SetVisible(false);
+		model->SetEnabled(false);
+		SetEnabled(false);
 	}
 }
 

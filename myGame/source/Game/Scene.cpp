@@ -2,11 +2,12 @@
 #include "PlayerObject.h"
 #include "GameObject.h"
 #include "CollisionLine.h"
+#include "Canvas.h"
 #include "RenderingGame.h"
+#include "Interactable.h"
 
 namespace Rendering{
 	Scene::Scene(Game& game, Camera& camera, int type):testObj(nullptr),testFloor(nullptr) {
-		
 		collisionPoints.push_back(new CollisionLine(XMFLOAT3(5, 0, 5), XMFLOAT3(-5, 0, 5)));
 		collisionPoints.push_back(new CollisionLine(XMFLOAT3(-5, 0, 5), XMFLOAT3(-5, 0, -5)));
 		collisionPoints.push_back(new CollisionLine(XMFLOAT3(-5, 0, -5), XMFLOAT3(5, 0, -5)));
@@ -15,6 +16,8 @@ namespace Rendering{
 		player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.01f, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg", collisionPoints);
 		objects.push_back(player);
 
+
+		objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png", player));
 
 		switch (type) {
 		case 0:
@@ -32,6 +35,7 @@ namespace Rendering{
 		objects.push_back(testFloor);
 
 
+		
 		
 	}
 

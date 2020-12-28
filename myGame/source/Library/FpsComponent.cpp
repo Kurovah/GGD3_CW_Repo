@@ -24,7 +24,7 @@ namespace Library
 
     XMFLOAT2& FpsComponent::TextPosition()
     {
-        return mTextPosition;
+		return mTextPosition;
     }
 
     int FpsComponent::FrameRate() const
@@ -54,12 +54,13 @@ namespace Library
 
     void FpsComponent::Draw(const GameTime& gameTime)
     {
-        mSpriteBatch->Begin();
+       /* mSpriteBatch->Begin();
             
         std::wostringstream fpsLabel;
         fpsLabel << std::setprecision(4) << L"Frame Rate: " << mFrameRate << "    Total Elapsed Time: " << gameTime.TotalGameTime();
         mSpriteFont->DrawString(mSpriteBatch, fpsLabel.str().c_str(), mTextPosition);
+		
 
-        mSpriteBatch->End();
+        mSpriteBatch->End();*/
     }
 }

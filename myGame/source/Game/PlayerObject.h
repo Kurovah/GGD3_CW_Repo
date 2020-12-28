@@ -20,6 +20,10 @@ namespace Rendering
 		float colRadius;
 		XMFLOAT3 forwardVec;
 		XMFLOAT2 CamOffset;
+		float boostPow;
+		float boostMod;
+		bool boosting;
+		float accel;
 		Keyboard* keyboard;
 		std::vector<CollisionLine*> colliders;
 		PlayerObject(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath, std::vector<CollisionLine*> _colliders);
@@ -33,5 +37,6 @@ namespace Rendering
 		float DotProduct(XMFLOAT3 _a, XMFLOAT3 _b);
 		void ResolveCollision(CollisionLine& _line);
 		float Distance(XMFLOAT3 _a, XMFLOAT3 _b);
+		XMFLOAT3 GetPos();
 	};
 }

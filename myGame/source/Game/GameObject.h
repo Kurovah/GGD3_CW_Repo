@@ -12,15 +12,17 @@ namespace Rendering {
 		//RTTI_DECLARATIONS(GameObject, DrawableGameComponent);
 	public:
 		GameObject( Game &_game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath);
+		GameObject( Game &_game, Camera& _camera);
 		~GameObject();
 		virtual void Initialize() override;
+		void Disable();
 		XMFLOAT4X4 worldMatrix;
 	protected:
 		ModelFromFile* model;
 		XMFLOAT3 position;
 		XMFLOAT3 rotation;
 		float modelScale;
-		bool staticObject;
+		bool Paused;
 		virtual void Update(const GameTime& gameTime) override;
 		virtual void Draw(const GameTime& gameTime) override;
 

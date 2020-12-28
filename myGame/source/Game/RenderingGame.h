@@ -32,6 +32,7 @@ namespace Rendering
 	class GameObject;
 	class PlayerObject;
 	class CollisionLine;
+	class Canvas;
 
     class RenderingGame : public Game
     {
@@ -59,6 +60,7 @@ namespace Rendering
 		LPDIRECTINPUT8 mDirectInput;
 		Keyboard* mKeyboard;
 		Mouse* mMouse;
+		Canvas* mCanvas;
 		ModelFromFile* mModel;
 		ModelFromFile* floorModel;
 		ModelFromFile* gearModel;
@@ -66,7 +68,7 @@ namespace Rendering
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
 		bool ChangeRequest;
-		PlayerObject* testObj;
+		PlayerObject* playerObj;
 		
 
 		int mScore;

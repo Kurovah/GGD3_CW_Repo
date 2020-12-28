@@ -10,6 +10,7 @@
 #include "RasterizerStates.h"
 #include "Scene.h"
 #include "GameObject.h"
+#include "Canvas.h"
 #include "PlayerObject.h"
 //display score
 #include <SpriteFont.h>
@@ -24,7 +25,8 @@ namespace Rendering
     RenderingGame::RenderingGame(HINSTANCE instance, const std::wstring& windowClass, const std::wstring& windowTitle, int showCommand)
         :  Game(instance, windowClass, windowTitle, showCommand),
         mDemo(nullptr),mMouse(nullptr),mKeyboard(nullptr),mDirectInput(nullptr),mModel(nullptr),gearModel(nullptr),floorModel(nullptr),
-		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr),testObj(nullptr),currentScene(nullptr),nextScene(nullptr)
+		mFpsComponent(nullptr), mRenderStateHelper(nullptr), mObjectDiffuseLight(nullptr),mSpriteFont(nullptr), mSpriteBatch(nullptr),
+		playerObj(nullptr),currentScene(nullptr),nextScene(nullptr),mCanvas(nullptr)
     {
 		ChangeRequest = false;
         mDepthStencilBufferEnabled = true;
@@ -46,9 +48,14 @@ namespace Rendering
 		RasterizerStates::Initialize(mDirect3DDevice);
 		SamplerStates::Initialize(mDirect3DDevice);
 
+		mCanvas = new Canvas(*this, *mCamera);
+		mCanvas->Initialize();
+
 		mFpsComponent = new FpsComponent(*this);
 		mFpsComponent->Initialize();
 		mRenderStateHelper = new RenderStateHelper(*this);
+
+		
 
 		mSpriteBatch = new SpriteBatch(mDirect3DDeviceContext);
 		mSpriteFont = new SpriteFont(mDirect3DDevice, L"Content\\Fonts\\Arial_14_Regular.spritefont");
@@ -58,7 +65,7 @@ namespace Rendering
 
 		//add the scene based objects here (use the scene class)
 		currentScene->Load(*this);
-
+		playerObj = currentScene->player;
 
 		//mModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg");
 		//mModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 5.0f, 0.6f, -5.0f);
@@ -118,13 +125,16 @@ namespace Rendering
 		DeleteObject(mObjectDiffuseLight);
 		DeleteObject(mSpriteFont);
 		DeleteObject(mSpriteBatch);
-		DeleteObject(testObj);
+		DeleteObject(playerObj);
+		DeleteObject(mCanvas);
 
         Game::Shutdown();
     }
 
     void RenderingGame::Update(const GameTime &gameTime)
     {
+		
+		mCanvas->Update(gameTime, *playerObj);
 		if (mKeyboard->WasKeyPressedThisFrame(DIK_ESCAPE))
 		{
 			Exit();
@@ -217,6 +227,7 @@ namespace Rendering
         mDirect3DDeviceContext->ClearDepthStencilView(mDepthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 		mRenderStateHelper->SaveAll();
 		mFpsComponent->Draw(gameTime);
+		mCanvas->Draw(gameTime);
 		mSpriteBatch->Begin();
 		//draw the score
 		std::wostringstream scoreLabel;

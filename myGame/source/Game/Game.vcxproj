@@ -153,26 +153,34 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoostBarSprite.cpp" />
+    <ClCompile Include="Canvas.cpp" />
     <ClCompile Include="CollisionLine.cpp" />
     <ClCompile Include="DiffuseLightingMaterial.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Interactable.cpp" />
     <ClCompile Include="ModelFromFile.cpp" />
     <ClCompile Include="ObjectDiffuseLight.cpp" />
     <ClCompile Include="PlayerObject.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="RenderingGame.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="TriangleDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoostBarSprite.h" />
+    <ClInclude Include="Canvas.h" />
     <ClInclude Include="CollisionLine.h" />
     <ClInclude Include="DiffuseLightingMaterial.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Interactable.h" />
     <ClInclude Include="ModelFromFile.h" />
     <ClInclude Include="ObjectDiffuseLight.h" />
     <ClInclude Include="PlayerObject.h" />
     <ClInclude Include="RenderingGame.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="TriangleDemo.h" />
   </ItemGroup>
   <ItemGroup>
