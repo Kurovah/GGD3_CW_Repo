@@ -13,7 +13,7 @@ namespace Library
     public:
         Game(HINSTANCE instance, const std::wstring& windowClass, const std::wstring& windowTitle, int showCommand);
         virtual ~Game();
-
+		
         HINSTANCE Instance() const;
         HWND WindowHandle() const;
         const WNDCLASSEX& Window() const; 
@@ -41,7 +41,7 @@ namespace Library
         virtual void Update(const GameTime& gameTime);
         virtual void Draw(const GameTime& gameTime);
 		void AddObject(GameComponent* object);
-
+		POINT windowCenter;
 
 		static bool toPick;
 		static int screenX;

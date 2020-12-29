@@ -13,13 +13,15 @@ namespace Rendering {
 	public:
 		GameObject( Game &_game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath);
 		GameObject( Game &_game, Camera& _camera);
+		GameObject(Game& _game, Camera& _camera, XMFLOAT3 translate);
 		~GameObject();
 		virtual void Initialize() override;
 		void Disable();
 		XMFLOAT4X4 worldMatrix;
+		XMFLOAT3 position;
 	protected:
 		ModelFromFile* model;
-		XMFLOAT3 position;
+		
 		XMFLOAT3 rotation;
 		float modelScale;
 		bool Paused;

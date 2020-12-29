@@ -1,5 +1,6 @@
 #pragma once
 #include "GameObject.h"
+#include "PlayerObject.h"
 namespace Rendering {
 	class PlayerObject;
 	class Interactable :
@@ -7,8 +8,9 @@ namespace Rendering {
 	{
 	public:
 		PlayerObject* mPlayer;
-		Interactable(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath, PlayerObject* player);
-		//virtual void Initialize() override;
+		Interactable(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT3 rotation, float scale, std::string _modelPath, std::string _texturePath);
+		~Interactable();
+		virtual void Initialize() override;
 		virtual void Update(const GameTime& gameTime) override;
 		//virtual void Draw(const GameTime& gameTime) override;
 		virtual void ActivateTrigger();

@@ -21,7 +21,9 @@ namespace Rendering {
 	}
 	PlayerObject::~PlayerObject()
 	{
-
+		for (CollisionLine* _col : colliders) {
+			_col = nullptr;
+		}
 	}
 
 	XMFLOAT3 PlayerObject::GetPos() {
@@ -46,6 +48,12 @@ namespace Rendering {
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 		XMFLOAT3 _fv;
 		XMVECTOR _pos = XMLoadFloat3(&position);
+
+
+		//clamp the value so it doesn't go too high
+		if (boostPow > 100) {
+			boostPow = 100;
+		}
 		accel = 0.01f;
 
 		//set movespeed
@@ -61,7 +69,7 @@ namespace Rendering {
 		//this will force the player to move forwards when boosting
 		if (keyboard->IsKeyHeldDown(DIK_K) && boostPow > 0) {
 			boostMod = 1.5f;
-			boostPow -= 0.1f;
+			SetBoost(boostPow - 0.1f);
 			Speed = 8;
 			accel = 0.01f;
 		}
@@ -165,5 +173,9 @@ namespace Rendering {
 					(_a.z - _b.z) * (_a.z - _b.z)
 				)
 			);
+	}
+
+	void PlayerObject::SetBoost(float b) {
+		boostPow = b;
 	}
 }

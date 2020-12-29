@@ -43,18 +43,21 @@ namespace Rendering
         virtual void Initialize() override;		
         virtual void Update(const GameTime& gameTime) override;
         virtual void Draw(const GameTime& gameTime) override;
-		void ChangeScene(Scene* newScene);
+		void ChangeScene(int type);
 		void AddCommonElements();
 		std::vector<CollisionLine*> colLines;
-
-
+		PlayerObject* playerObj;
+		Scene* nextScene;
+		Scene* currentScene;
+		bool ChangeRequest;
+		int queuedScene;
     protected:
         virtual void Shutdown() override;
 
     private:
 		static const XMFLOAT4 BackgroundColor;
-		Scene* currentScene;
-		Scene* nextScene;
+		
+		
 		FirstPersonCamera* mCamera;
         TriangleDemo* mDemo;
 		LPDIRECTINPUT8 mDirectInput;
@@ -67,8 +70,8 @@ namespace Rendering
 		FpsComponent* mFpsComponent;
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
-		bool ChangeRequest;
-		PlayerObject* playerObj;
+		
+		
 		
 
 		int mScore;

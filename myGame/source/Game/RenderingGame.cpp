@@ -42,14 +42,13 @@ namespace Rendering
 		//do common elements first
 		
 		AddCommonElements();
-		mServices.AddService(Camera::TypeIdClass(), mCamera);
+		
 
 
 		RasterizerStates::Initialize(mDirect3DDevice);
 		SamplerStates::Initialize(mDirect3DDevice);
 
-		mCanvas = new Canvas(*this, *mCamera);
-		mCanvas->Initialize();
+		
 
 		mFpsComponent = new FpsComponent(*this);
 		mFpsComponent->Initialize();
@@ -67,25 +66,10 @@ namespace Rendering
 		currentScene->Load(*this);
 		playerObj = currentScene->player;
 
-		//mModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg");
-		//mModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 5.0f, 0.6f, -5.0f);
-		//AddObject(mModel);
-		////mComponents.push_back(mModel);
 
-		//gearModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg",L"Descriptor goes here", 10);
-		//gearModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 0.0f, 0.6f, -5.0f);
-		//mComponents.push_back(gearModel);
-
-		//floorModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
-		////floorModel->SetPosition(0.0f, -0.0f, -0.0f, 1.0f, 0.0f, 0.0f, 0.0f);
-		//mComponents.push_back(floorModel);
-
-
-		/*XMFLOAT3 testTrans = XMFLOAT3(0, 0, 0);
-		XMFLOAT3 testRot = XMFLOAT3(0, 0, 0);
-		testObj = new PlayerObject(*this, *mCamera, testTrans, testRot, 0.01f);
-		mComponents.push_back(testObj);*/
-
+		//canvas must be after so that sprites can get the player
+		mCanvas = new Canvas(*this, *mCamera);
+		mCanvas->Initialize(currentScene);
         Game::Initialize();
 
 		mCamera->SetPosition(0.0f, 1.0f, 5.0f);
@@ -107,7 +91,7 @@ namespace Rendering
 
 		mServices.AddService(Keyboard::TypeIdClass(), mKeyboard);
 		mServices.AddService(Mouse::TypeIdClass(), mMouse);
-
+		mServices.AddService(Camera::TypeIdClass(), mCamera);
 	}
 
     void RenderingGame::Shutdown()
@@ -134,7 +118,7 @@ namespace Rendering
     void RenderingGame::Update(const GameTime &gameTime)
     {
 		
-		mCanvas->Update(gameTime, *playerObj);
+		mCanvas->Update(gameTime);
 		if (mKeyboard->WasKeyPressedThisFrame(DIK_ESCAPE))
 		{
 			Exit();
@@ -149,22 +133,12 @@ namespace Rendering
         Game::Update(gameTime);
 
 		if (ChangeRequest) {
-			ChangeScene(nextScene);
+			ChangeScene(queuedScene);
 			ChangeRequest = false;
-		}
-		if (Game::toPick)
-		{
-
-			if (gearModel->Visible())
-				Pick(Game::screenX, Game::screenY, gearModel);
-
-
-
-			Game::toPick = false;
 		}
     }
 
-	void RenderingGame::ChangeScene(Scene* newScene) {
+	void RenderingGame::ChangeScene(int type) {
 		//clear out components+services and add new ones
 		mServices.RemoveService(Keyboard::TypeIdClass());
 		//mServices.RemoveService(Camera::TypeIdClass());
@@ -174,51 +148,60 @@ namespace Rendering
 
 		mComponents.clear();
 		mComponents.push_back(tempCam);
-
-		currentScene = newScene;
+		DeleteObject(currentScene);
+		currentScene = new Scene(*this, *(FirstPersonCamera*)tempCam , type);
 
 		AddCommonElements();
 		currentScene->Load(*this);
+		playerObj = currentScene->player;
+		mCamera = (FirstPersonCamera*)mComponents[0];
+
+		//remove sprites and add new ones
+		mCanvas->sprites.clear();
+		mCanvas->Initialize(currentScene);
+
+
 		Game::Initialize();
+		SetCursorPos(windowCenter.x, windowCenter.y);
 	}
 
 	void RenderingGame::Pick(int sx, int sy, ModelFromFile* model)
 	{
-		//XMMATRIX P = mCam.Proj(); 
-		XMFLOAT4X4 P;
-		XMStoreFloat4x4(&P, mCamera->ProjectionMatrix());
-		//Compute picking ray in view space.
-		float vx = (+2.0f * sx / Game::DefaultScreenWidth - 1.0f) / P(0, 0);
-		float vy = (-2.0f * sy / Game::DefaultScreenHeight + 1.0f) / P(1, 1);
-		// Ray definition in view space.
-		XMVECTOR rayOrigin = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
-		XMVECTOR rayDir = XMVectorSet(vx, vy, -1.0f, 0.0f);
-		// Tranform ray to local space of Mesh via the inverse of both of view and world transform
-		XMMATRIX V = mCamera->ViewMatrix();
-		XMMATRIX invView = XMMatrixInverse(&XMMatrixDeterminant(V), V);
-		XMMATRIX W = XMLoadFloat4x4(model->WorldMatrix());
-		XMMATRIX invWorld = XMMatrixInverse(&XMMatrixDeterminant(W), W);
-		XMMATRIX toLocal = XMMatrixMultiply(invView, invWorld);
-		rayOrigin = XMVector3TransformCoord(rayOrigin, toLocal);
-		rayDir = XMVector3TransformNormal(rayDir, toLocal);
+		////XMMATRIX P = mCam.Proj(); 
+		//XMFLOAT4X4 P;
+		//XMStoreFloat4x4(&P, mCamera->ProjectionMatrix());
+		////Compute picking ray in view space.
+		//float vx = (+2.0f * sx / Game::DefaultScreenWidth - 1.0f) / P(0, 0);
+		//float vy = (-2.0f * sy / Game::DefaultScreenHeight + 1.0f) / P(1, 1);
+		//// Ray definition in view space.
+		//XMVECTOR rayOrigin = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
+		//XMVECTOR rayDir = XMVectorSet(vx, vy, -1.0f, 0.0f);
+		//// Tranform ray to local space of Mesh via the inverse of both of view and world transform
+		//XMMATRIX V = mCamera->ViewMatrix();
+		//XMMATRIX invView = XMMatrixInverse(&XMMatrixDeterminant(V), V);
+		//XMMATRIX W = XMLoadFloat4x4(model->WorldMatrix());
+		//XMMATRIX invWorld = XMMatrixInverse(&XMMatrixDeterminant(W), W);
+		//XMMATRIX toLocal = XMMatrixMultiply(invView, invWorld);
+		//rayOrigin = XMVector3TransformCoord(rayOrigin, toLocal);
+		//rayDir = XMVector3TransformNormal(rayDir, toLocal);
 
-		// Make the ray direction unit length for the intersection tests.
-		rayDir = XMVector3Normalize(rayDir);
-		float tmin = 0.0;
-		if (model->mBoundingBox.Intersects(rayOrigin, rayDir, tmin))
-		{
-			std::wostringstream pickupString;
-			pickupString << L"Do you want to pick up: " << (model->GetModelDes()).c_str() << '\n' << '\t' << '+' << model->ModelValue() << L" points";
-			int result = MessageBox(0, pickupString.str().c_str(), L"Object Found", MB_ICONASTERISK | MB_YESNO);
+		//// Make the ray direction unit length for the intersection tests.
+		//rayDir = XMVector3Normalize(rayDir);
+		//float tmin = 0.0;
+		//if (model->mBoundingBox.Intersects(rayOrigin, rayDir, tmin))
+		//{
+		//	std::wostringstream pickupString;
+		//	pickupString << L"Do you want to pick up: " << (model->GetModelDes()).c_str() << '\n' << '\t' << '+' << model->ModelValue() << L" points";
+		//	int result = MessageBox(0, pickupString.str().c_str(), L"Object Found", MB_ICONASTERISK | MB_YESNO);
 
-			//To make the object invisible after being picked, in the Pick function, add the following code:
-			if (result == IDYES)
-			{ //hide the object
-				model->SetVisible(false);
-				//update the score
-				mScore += model->ModelValue();
-			}
-		}
+		//	//To make the object invisible after being picked, in the Pick function, add the following code:
+		//	if (result == IDYES)
+		//	{ //hide the object
+		//		model->SetVisible(false);
+		//		//update the score
+		//		mScore += model->ModelValue();
+		//	}
+		//}
 	}
 
     void RenderingGame::Draw(const GameTime &gameTime)
@@ -227,14 +210,16 @@ namespace Rendering
         mDirect3DDeviceContext->ClearDepthStencilView(mDepthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 		mRenderStateHelper->SaveAll();
 		mFpsComponent->Draw(gameTime);
-		mCanvas->Draw(gameTime);
 		mSpriteBatch->Begin();
 		//draw the score
 		std::wostringstream scoreLabel;
-		scoreLabel << L"Your current score: " << mScore << "\n";
+		Mouse* m = (Mouse*)Services().GetService(Mouse::TypeIdClass());
+		//Game::screenX;
+		//Offsety = Game::screenY;
+		scoreLabel << L"xpos: " << m->Y() << "\n";
 		mSpriteFont->DrawString(mSpriteBatch, scoreLabel.str().c_str(), XMFLOAT2(0.0f, 120.0f), Colors::Red);
 		mSpriteBatch->End();
-
+		mCanvas->Draw(gameTime);
 		mRenderStateHelper->RestoreAll();
 
         Game::Draw(gameTime);

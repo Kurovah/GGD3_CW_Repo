@@ -17,13 +17,13 @@ namespace Rendering {
 	{
 	public:
 		Sprite(Game& _game, Camera& _camera, XMFLOAT2 _pos, XMFLOAT2 _scale, std::string _texturePath);
-		XMFLOAT2 position;
+		XMFLOAT2 spritePosition;
 		XMFLOAT2 scale;
 		XMFLOAT2 origin;
-		RECT spriteRect;
+		PlayerObject* player;
 		virtual void Initialize() override;
-		virtual void Update(const GameTime& gameTime, PlayerObject& player);
-		void Draw(const GameTime& gameTime, SpriteBatch* spriteBatch);
+		virtual void Update(const GameTime& gameTime);
+		virtual void Draw(const GameTime& gameTime, SpriteBatch* spriteBatch);
 
 		
 

@@ -9,6 +9,8 @@ namespace Rendering{
 	class PlayerObject;
 	class CollisionLine;
 	class Canvas;
+	class FinishLine;
+	class Sprite;
 
 	class Scene
 	{
@@ -26,6 +28,7 @@ namespace Rendering{
 		GameObject* testFloor;
 		Canvas* canvas;
 		std::vector<CollisionLine*> collisionPoints;
+		std::vector<Sprite*> sceneSprites;
 	};
 }
 

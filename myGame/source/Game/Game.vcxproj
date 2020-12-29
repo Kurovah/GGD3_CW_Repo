@@ -154,9 +154,11 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoostBarSprite.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Canvas.cpp" />
     <ClCompile Include="CollisionLine.cpp" />
     <ClCompile Include="DiffuseLightingMaterial.cpp" />
+    <ClCompile Include="FinishLine.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Interactable.cpp" />
     <ClCompile Include="ModelFromFile.cpp" />
@@ -170,9 +172,11 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoostBarSprite.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Canvas.h" />
     <ClInclude Include="CollisionLine.h" />
     <ClInclude Include="DiffuseLightingMaterial.h" />
+    <ClInclude Include="FinishLine.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Interactable.h" />
     <ClInclude Include="ModelFromFile.h" />

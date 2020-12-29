@@ -31,7 +31,7 @@ namespace Library
         long X() const;
         long Y() const;
         long Wheel() const;
-
+		bool outOfBounds;
         bool IsButtonUp(MouseButtons button) const;
         bool IsButtonDown(MouseButtons button) const;		
         bool WasButtonUp(MouseButtons button) const;
@@ -50,6 +50,8 @@ namespace Library
 
         long mX;
         long mY;
+		long mX2;
+        long mY2;
         long mWheel;
     };
 }

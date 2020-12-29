@@ -36,6 +36,7 @@ namespace Rendering
 		float GetOffset(CollisionLine& _line);
 		float DotProduct(XMFLOAT3 _a, XMFLOAT3 _b);
 		void ResolveCollision(CollisionLine& _line);
+		void SetBoost(float b);
 		float Distance(XMFLOAT3 _a, XMFLOAT3 _b);
 		XMFLOAT3 GetPos();
 	};

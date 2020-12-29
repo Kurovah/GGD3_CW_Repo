@@ -23,6 +23,21 @@ namespace Rendering{
 		model->SetPosition(worldMatrix);
 	}
 
+	GameObject::GameObject(Game& _game, Camera& _camera, XMFLOAT3 _translate) :DrawableGameComponent(_game, _camera)
+		, model(nullptr), worldMatrix(MatrixHelper::Identity) {
+		//init values
+		position = _translate;
+		//make initial matrix
+		XMMATRIX tempMatrix = XMLoadFloat4x4(&worldMatrix);
+		XMMATRIX trans = XMMatrixTranslation(position.x, position.y, position.z);
+		XMMATRIX rotZ = XMMatrixRotationZ(0);
+		XMMATRIX rotY = XMMatrixRotationY(0);
+		XMMATRIX rotX = XMMatrixRotationX(0);
+		XMMATRIX Scale = XMMatrixScaling(1, 1, 1);
+		tempMatrix = rotZ * rotX * rotY * Scale * trans;
+		XMStoreFloat4x4(&worldMatrix, tempMatrix);
+	}
+
 	GameObject::GameObject(Game& _game, Camera& _camera) :DrawableGameComponent(_game, _camera)
 		, model(nullptr), worldMatrix(MatrixHelper::Identity) {
 		
@@ -61,8 +76,7 @@ namespace Rendering{
 
 
 	void GameObject::Initialize() {
-
-		model->Initialize();
+		if(model != nullptr){ model->Initialize(); }
 	}
 
 	void GameObject::Draw(const GameTime& gameTime) {
@@ -75,6 +89,7 @@ namespace Rendering{
 	void GameObject::Disable() {
 		model->SetVisible(false);
 		model->SetEnabled(false);
+		SetVisible(false);
 		SetEnabled(false);
 	}
 }
