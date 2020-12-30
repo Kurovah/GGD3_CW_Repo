@@ -9,6 +9,9 @@
     <ContentFile>
       <FullPath>C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Content\Effects\DiffuseLighting.cso</FullPath>
     </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Skybox.cso</FullPath>
+    </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />

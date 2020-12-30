@@ -46,22 +46,22 @@ SamplerState ColorSampler
 	AddressU = WRAP;
 	AddressV = WRAP;
 };
-
-//Sky Box Resources
-TextureCube SkyboxTexture <
-	string UIName = "Skybox Texture";
-	string ResourceType = "3D";
-	>;
-
-SamplerState TrilinearSampler
-{
-	Filter = MIN_MAG_MIP_LINEAR;
-};
-
-RasterizerState DisableCulling
-{
-	CullMode = None;
-};
+//
+////Sky Box Resources
+//TextureCube SkyboxTexture <
+//	string UIName = "Skybox Texture";
+//	string ResourceType = "3D";
+//	>;
+//
+//SamplerState TrilinearSampler
+//{
+//	Filter = MIN_MAG_MIP_LINEAR;
+//};
+//
+//RasterizerState DisableCulling
+//{
+//	CullMode = None;
+//};
 
 
 /************* Data Structures *************/
@@ -144,15 +144,15 @@ technique11 main11
     }
 }
 
-/**Techniques for skybox**/
-technique10 main10
-{
-	pass p0
-	{
-		SetVertexShader(CompileShader(vs_4_0, vertex_shader()));
-		SetGeometryShader(NULL);
-		SetPixelShader(CompileShader(ps_4_0, pixel_shader()));
-
-		SetRasterizerState(DisableCulling);
-	}
-};
+///**Techniques for skybox**/
+//technique10 main10
+//{
+//	pass p0
+//	{
+//		SetVertexShader(CompileShader(vs_4_0, vertex_shader()));
+//		SetGeometryShader(NULL);
+//		SetPixelShader(CompileShader(ps_4_0, pixel_shader()));
+//
+//		SetRasterizerState(DisableCulling);
+//	}
+//};

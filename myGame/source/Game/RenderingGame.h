@@ -32,6 +32,7 @@ namespace Rendering
 	class GameObject;
 	class PlayerObject;
 	class CollisionLine;
+	class Skybox;
 
     class RenderingGame : public Game
     {
@@ -52,6 +53,7 @@ namespace Rendering
 
     private:
 		static const XMFLOAT4 BackgroundColor;
+		Skybox* mSkybox;
 		Scene* currentScene;
 		Scene* nextScene;
 		FirstPersonCamera* mCamera;

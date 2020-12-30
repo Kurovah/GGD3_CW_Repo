@@ -21,8 +21,10 @@ namespace Rendering{
 		void UnLoad();
 
 		PlayerObject* player;
+		PlayerObject* skyboxV2;
 		GameObject* testObj;
 		GameObject* testFloor;
+		GameObject* skybox;
 		std::vector<CollisionLine*> collisionPoints;
 	};
 }

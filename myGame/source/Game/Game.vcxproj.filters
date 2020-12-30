@@ -77,10 +77,21 @@
     <ClInclude Include="CollisionLine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\content\Effects\DiffuseLighting.fx">
       <Filter>Shader</Filter>
     </FxCompile>
+    <FxCompile Include="..\..\content\Effects\Skybox.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

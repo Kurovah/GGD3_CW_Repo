@@ -1,27 +1,37 @@
-﻿  A subdirectory or file C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content already exists.
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.cso
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.fx
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\DiffuseLighting.fx
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.cso
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.fx
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\include\Common.fxh
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\bench.3ds
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
-  17 File(s) copied
-  PlayerObject.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+﻿  A subdirectory or file C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Content already exists.
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.cso
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.fx
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\DiffuseLighting.fx
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\Skybox.fx
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.cso
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.fx
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Effects\include\Common.fxh
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\bench.3ds
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\cube.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV2.3ds
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV3.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\SHIPV4.3ds
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\Skybox1.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\SkyboxV2.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\FinalColor.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColour.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV2.jpg
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\Sky.png
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\sky2.png
+  30 File(s) copied
   Scene.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
-  Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
-  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
+  Game.vcxproj -> C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Game.exe
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
