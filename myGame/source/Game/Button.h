@@ -14,7 +14,7 @@ namespace Rendering {
 		public Sprite
 	{
 	public:
-		Button(Game& _game, Camera& _camera, XMFLOAT2 _pos, XMFLOAT2 _scale, std::string _texturePath, std::string _text);
+		Button(Game& _game, Camera& _camera, XMFLOAT2 _pos, XMFLOAT2 _scale, std::string _texturePath, std::string _text, int bType);
 		virtual void Initialize() override;
 		virtual void Update(const GameTime& gameTime) override;
 		virtual void Draw(const GameTime& gameTime, SpriteBatch* spriteBatch) override;
@@ -24,8 +24,9 @@ namespace Rendering {
 		std::string buttonText;
 		float Offsetx;
 		float Offsety;
+		int buttonType;
 
-		bool IsInBounds(float _x, float _y);
+		bool IsInBounds();
 	};
 }
 

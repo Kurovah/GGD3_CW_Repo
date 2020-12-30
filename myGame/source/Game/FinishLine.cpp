@@ -21,10 +21,13 @@ namespace Rendering {
 				}
 				break;
 			case 1:
-				RenderingGame * _g = (RenderingGame*)mGame;
-				_g->queuedScene = 0;
-				_g->ChangeRequest = true;
-				break;
+				//only activate when you reenter
+				if (intersecting && !lastIn) {
+					RenderingGame* _g = (RenderingGame*)mGame;
+					_g->queuedScene = 1;
+					_g->ChangeRequest = true;
+					break;
+				}
 		}
 		
 		lastIn = intersecting;

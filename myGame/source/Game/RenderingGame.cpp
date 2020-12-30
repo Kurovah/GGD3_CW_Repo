@@ -124,11 +124,7 @@ namespace Rendering
 			Exit();
 		}
 
-		if (mKeyboard->WasKeyPressedThisFrame(DIK_J))
-		{
-			ChangeRequest = true;
-		}
-		mFpsComponent->Update(gameTime);
+		//mFpsComponent->Update(gameTime);
 		ReleaseObject(mDirectInput);
         Game::Update(gameTime);
 
@@ -209,16 +205,24 @@ namespace Rendering
         mDirect3DDeviceContext->ClearRenderTargetView(mRenderTargetView, reinterpret_cast<const float*>(&BackgroundColor));
         mDirect3DDeviceContext->ClearDepthStencilView(mDepthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 		mRenderStateHelper->SaveAll();
-		mFpsComponent->Draw(gameTime);
-		mSpriteBatch->Begin();
-		//draw the score
-		std::wostringstream scoreLabel;
-		Mouse* m = (Mouse*)Services().GetService(Mouse::TypeIdClass());
-		//Game::screenX;
-		//Offsety = Game::screenY;
-		scoreLabel << L"xpos: " << m->Y() << "\n";
-		mSpriteFont->DrawString(mSpriteBatch, scoreLabel.str().c_str(), XMFLOAT2(0.0f, 120.0f), Colors::Red);
-		mSpriteBatch->End();
+
+
+		//mFpsComponent->Draw(gameTime);
+		//mSpriteBatch->Begin();
+		////draw the score
+		//std::wostringstream scoreLabel;
+		//Mouse* m = (Mouse*)Services().GetService(Mouse::TypeIdClass());
+		////Game::screenX;
+		////Offsety = Game::screenY;
+		//
+		//POINT p;
+		//GetCursorPos(&p);
+		//ScreenToClient(WindowHandle(), &p);
+		//scoreLabel << L"xpos: " << p.y << "\n";
+		//mSpriteFont->DrawString(mSpriteBatch, scoreLabel.str().c_str(), XMFLOAT2(0.0f, 120.0f), Colors::Red);
+		//mSpriteBatch->End();
+
+
 		mCanvas->Draw(gameTime);
 		mRenderStateHelper->RestoreAll();
 

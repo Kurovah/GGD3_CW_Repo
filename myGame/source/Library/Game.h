@@ -42,6 +42,7 @@ namespace Library
         virtual void Draw(const GameTime& gameTime);
 		void AddObject(GameComponent* object);
 		POINT windowCenter;
+		HWND window;
 
 		static bool toPick;
 		static int screenX;
