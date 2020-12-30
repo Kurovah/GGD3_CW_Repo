@@ -8,6 +8,7 @@
 #include "Sprite.h"
 #include "Button.h"
 #include "BoostBarSprite.h"
+#include "TimerSprite.h"
 #include "FinishLine.h"
 
 namespace Rendering{
@@ -47,6 +48,7 @@ namespace Rendering{
 
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
 			sceneSprites.push_back(new Sprite(game, camera, XMFLOAT2(0, 0), XMFLOAT2(1, 1), "Content\\Textures\\BoostBar.png"));
+			sceneSprites.push_back(new TimerSprite(game, camera, XMFLOAT2(916, 0), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png"));
 			break;
 		case 3://track 2
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(5, 0, 5), XMFLOAT3(-5, 0, 5)));
@@ -63,7 +65,7 @@ namespace Rendering{
 			objects.push_back(testFloor);
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
 			sceneSprites.push_back(new Sprite(game, camera, XMFLOAT2(0, 0), XMFLOAT2(1, 1), "Content\\Textures\\BoostBar.png"));
-
+			sceneSprites.push_back(new TimerSprite(game, camera, XMFLOAT2(916, 0), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png"));
 			break;
 		}	
 		

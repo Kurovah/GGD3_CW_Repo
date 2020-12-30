@@ -33,6 +33,7 @@ namespace Rendering
 	class PlayerObject;
 	class CollisionLine;
 	class Canvas;
+	class Timer;
 
     class RenderingGame : public Game
     {
@@ -49,6 +50,7 @@ namespace Rendering
 		PlayerObject* playerObj;
 		Scene* nextScene;
 		Scene* currentScene;
+		Timer* mTimer;
 		bool ChangeRequest;
 		int queuedScene;
     protected:

@@ -12,6 +12,7 @@
 #include "GameObject.h"
 #include "Canvas.h"
 #include "PlayerObject.h"
+#include "Timer.h"
 //display score
 #include <SpriteFont.h>
 #include <sstream>
@@ -40,7 +41,7 @@ namespace Rendering
     void RenderingGame::Initialize()
     {
 		//do common elements first
-		
+		mTimer = new Timer();
 		AddCommonElements();
 		
 
@@ -117,7 +118,7 @@ namespace Rendering
 
     void RenderingGame::Update(const GameTime &gameTime)
     {
-		
+		mTimer->Update(gameTime);
 		mCanvas->Update(gameTime);
 		if (mKeyboard->WasKeyPressedThisFrame(DIK_ESCAPE))
 		{
@@ -131,6 +132,8 @@ namespace Rendering
 		if (ChangeRequest) {
 			ChangeScene(queuedScene);
 			ChangeRequest = false;
+			mTimer->Reset();
+			if(queuedScene == 2 || queuedScene == 3){mTimer->StartTimer(gameTime);}
 		}
     }
 
@@ -158,7 +161,6 @@ namespace Rendering
 
 
 		Game::Initialize();
-		SetCursorPos(windowCenter.x, windowCenter.y);
 	}
 
 	void RenderingGame::Pick(int sx, int sy, ModelFromFile* model)
