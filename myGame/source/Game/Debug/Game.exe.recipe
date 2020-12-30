@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Game.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Content\Effects\DiffuseLighting.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Skybox.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
