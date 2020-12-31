@@ -225,12 +225,14 @@ namespace Rendering
 		//scoreLabel << L"xpos: " << p.y << "\n";
 		//mSpriteFont->DrawString(mSpriteBatch, scoreLabel.str().c_str(), XMFLOAT2(0.0f, 120.0f), Colors::Red);
 		//mSpriteBatch->End();
-
-
+		
+		Game::Draw(gameTime);
+		mRenderStateHelper->RestoreAll();
+		mRenderStateHelper->SaveAll();
 		mCanvas->Draw(gameTime);
 		mRenderStateHelper->RestoreAll();
-
-        Game::Draw(gameTime);
+		
+		
        
         HRESULT hr = mSwapChain->Present(0, 0);
         if (FAILED(hr))

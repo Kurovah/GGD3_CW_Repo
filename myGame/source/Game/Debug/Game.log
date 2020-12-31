@@ -38,21 +38,10 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\skyBoxUV.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
   38 File(s) copied
-  FinishLine.cpp
+  RenderingGame.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
-  RenderingGame.cpp
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(29,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(29,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
-  SaveSystem.cpp
 C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
-  TimerSprite.cpp
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: The contents of <filesystem> are only available with C++17 or later.
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
