@@ -34,6 +34,7 @@ namespace Rendering
 	class CollisionLine;
 	class Canvas;
 	class Timer;
+	class SaveSystem;
 
     class RenderingGame : public Game
     {
@@ -51,6 +52,7 @@ namespace Rendering
 		Scene* nextScene;
 		Scene* currentScene;
 		Timer* mTimer;
+		SaveSystem* saveSys;
 		bool ChangeRequest;
 		int queuedScene;
     protected:

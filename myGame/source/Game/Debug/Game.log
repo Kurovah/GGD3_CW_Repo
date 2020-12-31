@@ -19,6 +19,7 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SHIPV4.3ds
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Skybox1.obj
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SkyboxV2.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\testSkyBox.obj
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
@@ -34,59 +35,24 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\shipUVs.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Sky.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\sky2.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\skyBoxUV.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
-  36 File(s) copied
-FXC : warning X4717: Effects deprecated for D3DCompiler_47
-  
-  compilation object save succeeded; see C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content\Effects\DiffuseLighting.cso
-FXC : warning X4717: Effects deprecated for D3DCompiler_47
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\content\Effects\Skybox.fx(47,5-45): warning X3206: implicit truncation of vector type
-  
-  compilation object save succeeded; see C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Skybox.cso
-  BoostBarSprite.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Button.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(16,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Canvas.cpp
-  CollisionLine.cpp
-  DiffuseLightingMaterial.cpp
+  38 File(s) copied
   FinishLine.cpp
-  GameObject.cpp
-  Interactable.cpp
-  ModelFromFile.cpp
-  ObjectDiffuseLight.cpp
-  PlayerObject.cpp
-  Program.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
   RenderingGame.cpp
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Scene.cpp
-  Sprite.cpp
-  Timer.cpp
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(80,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(80,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(80,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(80,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(17,45): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(18,62): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(19,55): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(29,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(29,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+  SaveSystem.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
   TimerSprite.cpp
-  TriangleDemo.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: The contents of <filesystem> are only available with C++17 or later.
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Generating Code...
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(24,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(24,36): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(24,36): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  LINK : C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe not found or not built by the last incremental link; performing full link
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.

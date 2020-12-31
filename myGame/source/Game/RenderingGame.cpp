@@ -13,6 +13,7 @@
 #include "Canvas.h"
 #include "PlayerObject.h"
 #include "Timer.h"
+#include "SaveSystem.h"
 //display score
 #include <SpriteFont.h>
 #include <sstream>
@@ -40,6 +41,7 @@ namespace Rendering
 
     void RenderingGame::Initialize()
     {
+		SaveSystem::InitialiseSaves();
 		//do common elements first
 		mTimer = new Timer();
 		AddCommonElements();

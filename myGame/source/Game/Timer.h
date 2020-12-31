@@ -6,7 +6,7 @@ namespace Rendering {
 	public:
 		bool active;
 		int offset;
-		int currentTime;
+		float currentTime;
 		int secs;
 		int mins;
 		Timer();

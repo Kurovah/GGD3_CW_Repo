@@ -1,6 +1,8 @@
 #include "FinishLine.h"
 #include "RenderingGame.h"
 #include "PlayerObject.h"
+#include "SaveSystem.h"
+#include "Timer.h"
 
 namespace Rendering {
 	FinishLine::FinishLine(Game& _game, Camera& _camera, XMFLOAT3 translate, XMFLOAT2 scale):GameObject(_game, _camera, translate) {
@@ -24,8 +26,10 @@ namespace Rendering {
 				//only activate when you reenter
 				if (intersecting && !lastIn) {
 					RenderingGame* _g = (RenderingGame*)mGame;
+					SaveSystem::SaveBestTime(_g->mTimer->currentTime, _g->queuedScene -2);
 					_g->queuedScene = 1;
 					_g->ChangeRequest = true;
+					
 					break;
 				}
 		}

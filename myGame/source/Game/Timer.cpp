@@ -14,9 +14,9 @@ namespace Rendering {
 
 	void Timer::Update(const GameTime& gameTime) {
 		if (active) {
-			currentTime = gameTime.ElapsedGameTime() - offset;
-			if (currentTime >= 30) { offset = gameTime.ElapsedGameTime(); secs += 1; }
-			if (secs >= 60) { offset = gameTime.ElapsedGameTime(); mins += 1; }
+			currentTime += 0.0025f;
+			mins = currentTime / 60;
+			secs = currentTime - (mins*60);
 		}
 	}
 	void Timer::StartTimer(const GameTime& gameTime) {
