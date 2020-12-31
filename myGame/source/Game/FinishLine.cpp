@@ -26,7 +26,11 @@ namespace Rendering {
 				//only activate when you reenter
 				if (intersecting && !lastIn) {
 					RenderingGame* _g = (RenderingGame*)mGame;
-					SaveSystem::SaveBestTime(_g->mTimer->currentTime, _g->queuedScene -2);
+					//only save the time if the current one is less
+					if (SaveSystem::GetBestTime(_g->queuedScene - 2) > _g->mTimer->currentTime) 
+					{
+						SaveSystem::SaveBestTime(_g->mTimer->currentTime, _g->queuedScene - 2);
+					}
 					_g->queuedScene = 1;
 					_g->ChangeRequest = true;
 					

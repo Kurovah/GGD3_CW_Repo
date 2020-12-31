@@ -29,9 +29,6 @@ namespace Rendering {
 	}
 
 	void SaveSystem::InitialiseSaves() {
-
-		
-
 		for (int i = 0; i < 2; i++) {
 			//if a file doesn't exist then create a new one with a default value
 			std::ifstream check("./Content/Saves/Save" + std::to_string(i) + ".txt");
@@ -42,6 +39,15 @@ namespace Rendering {
 				file << 999 << std::endl;
 				file.close();
 			}
+		}
+	}
+
+	void SaveSystem::ResetSaves() {
+		for (int i = 0; i < 2; i++) {
+			std::ofstream file;
+			file.open("./Content/Saves/Save" + std::to_string(i) + ".txt");
+			file << 9999 << std::endl;
+			file.close();
 		}
 	}
 }

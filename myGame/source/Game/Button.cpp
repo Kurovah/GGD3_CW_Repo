@@ -3,6 +3,7 @@
 #include "Utility.h"
 #include <SpriteFont.h>
 #include <SpriteBatch.h>
+#include "SaveSystem.h"
 #include <codecvt>
 #include <sstream>
 #include <iomanip>
@@ -64,6 +65,9 @@ namespace Rendering {
 				_g->queuedScene = 0;
 				_g->ChangeRequest = true;
 				break;
+			case 4://reset saves
+				SaveSystem::ResetSaves();
+				break;
 		}
 		
 	}
@@ -72,6 +76,6 @@ namespace Rendering {
 		POINT p;
 		GetCursorPos(&p);
 		ScreenToClient(mGame->WindowHandle(), &p);
-		return p.x < spritePosition.x + 112  && p.y <spritePosition.y + 364 && p.x > spritePosition.x && p.y > spritePosition.y;
+		return p.x < spritePosition.x + 364  && p.y <spritePosition.y + 112 && p.x > spritePosition.x && p.y > spritePosition.y;
 	}
 }

@@ -24,7 +24,8 @@ namespace Rendering{
 		case 0://main menu
 
 			
-			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(458, 496), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Start",0));
+			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(458, 420), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Start",0));
+			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(458, 560), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "ResetSaves",4));
 			break;
 
 		case 1://track selection

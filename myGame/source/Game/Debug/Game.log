@@ -38,10 +38,11 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\skyBoxUV.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
   38 File(s) copied
-  RenderingGame.cpp
+  Button.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(10,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(11,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(18,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
