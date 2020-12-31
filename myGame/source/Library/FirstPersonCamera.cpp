@@ -82,6 +82,7 @@ namespace Library
 
     void FirstPersonCamera::Update(const GameTime& gameTime)
     {
+		/*
 		XMFLOAT3 movementAmount = Vector3Helper::Zero;
         if (mKeyboard != nullptr)
         {
@@ -151,7 +152,7 @@ namespace Library
 		position += actualMoveSpeed;
 		//this updates the position
         XMStoreFloat3(&mPosition, position);
-
+		*/
         Camera::Update(gameTime);
     }
 }

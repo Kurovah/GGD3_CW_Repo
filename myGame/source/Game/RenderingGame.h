@@ -32,7 +32,9 @@ namespace Rendering
 	class GameObject;
 	class PlayerObject;
 	class CollisionLine;
-	class Skybox;
+	class Canvas;
+	class Timer;
+	class SaveSystem;
 
     class RenderingGame : public Game
     {
@@ -43,32 +45,37 @@ namespace Rendering
         virtual void Initialize() override;		
         virtual void Update(const GameTime& gameTime) override;
         virtual void Draw(const GameTime& gameTime) override;
-		void ChangeScene(Scene* newScene);
+		void ChangeScene(int type);
 		void AddCommonElements();
 		std::vector<CollisionLine*> colLines;
-
-
+		PlayerObject* playerObj;
+		Scene* nextScene;
+		Scene* currentScene;
+		Timer* mTimer;
+		SaveSystem* saveSys;
+		bool ChangeRequest;
+		int queuedScene;
     protected:
         virtual void Shutdown() override;
 
     private:
 		static const XMFLOAT4 BackgroundColor;
-		Skybox* mSkybox;
-		Scene* currentScene;
-		Scene* nextScene;
+		
+		
 		FirstPersonCamera* mCamera;
         TriangleDemo* mDemo;
 		LPDIRECTINPUT8 mDirectInput;
 		Keyboard* mKeyboard;
 		Mouse* mMouse;
+		Canvas* mCanvas;
 		ModelFromFile* mModel;
 		ModelFromFile* floorModel;
 		ModelFromFile* gearModel;
 		FpsComponent* mFpsComponent;
 		RenderStateHelper* mRenderStateHelper;
 		ObjectDiffuseLight* mObjectDiffuseLight;
-		bool ChangeRequest;
-		PlayerObject* testObj;
+		
+		
 		
 
 		int mScore;

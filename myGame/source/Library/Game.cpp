@@ -24,7 +24,7 @@ namespace Library
           mDepthStencilBuffer(nullptr), mRenderTargetView(nullptr), mDepthStencilView(nullptr), mViewport(),
 		  mComponents(), mServices()
     {
-
+		boost = 100;
     }
 
     Game::~Game()
@@ -71,6 +71,15 @@ namespace Library
         return mDirect3DDevice;
     }
 
+	float& Game::Boost()
+	{
+		return boost;
+	}
+
+	void  Game::SetBoost(float _a) {
+		boost = _a;
+	}
+
     ID3D11DeviceContext1* Game::Direct3DDeviceContext() const
     {
         return mDirect3DDeviceContext;
@@ -114,7 +123,7 @@ namespace Library
 
         MSG message;
         ZeroMemory(&message, sizeof(message));
-        
+		SetCursorPos(windowCenter.x, windowCenter.y);
         mGameClock.Reset();		
 
         while (message.message != WM_QUIT)
@@ -207,10 +216,11 @@ namespace Library
 
         RegisterClassEx(&mWindow);
         POINT center = CenterWindow(mScreenWidth, mScreenHeight);
+		windowCenter = center;
         mWindowHandle = CreateWindow(mWindowClass.c_str(), mWindowTitle.c_str(), WS_OVERLAPPEDWINDOW, center.x, center.y, windowRectangle.right - windowRectangle.left, windowRectangle.bottom - windowRectangle.top, nullptr, nullptr, mInstance, nullptr);
-
         ShowWindow(mWindowHandle, mShowCommand);
         UpdateWindow(mWindowHandle);
+		
     }
 
     void Game::InitializeDirectX()

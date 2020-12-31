@@ -8,6 +8,9 @@ namespace Rendering{
 	class GameObject;
 	class PlayerObject;
 	class CollisionLine;
+	class Canvas;
+	class FinishLine;
+	class Sprite;
 
 	class Scene
 	{
@@ -21,11 +24,11 @@ namespace Rendering{
 		void UnLoad();
 
 		PlayerObject* player;
-		PlayerObject* skyboxV2;
 		GameObject* testObj;
 		GameObject* testFloor;
-		GameObject* skybox;
+		Canvas* canvas;
 		std::vector<CollisionLine*> collisionPoints;
+		std::vector<Sprite*> sceneSprites;
 	};
 }
 

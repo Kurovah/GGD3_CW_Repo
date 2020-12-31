@@ -16,10 +16,18 @@ namespace Rendering {
 	{
 		colRadius = 1;
 		colliders = _colliders;
+		boostPow = 100;
+		boosting = false;
 	}
 	PlayerObject::~PlayerObject()
 	{
+		for (CollisionLine* _col : colliders) {
+			_col = nullptr;
+		}
+	}
 
+	XMFLOAT3 PlayerObject::GetPos() {
+		return position;
 	}
 
 	void PlayerObject::Initialize() 
@@ -40,14 +48,30 @@ namespace Rendering {
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 		XMFLOAT3 _fv;
 		XMVECTOR _pos = XMLoadFloat3(&position);
-		
+
+
+		//clamp the value so it doesn't go too high
+		if (boostPow > 100) {
+			boostPow = 100;
+		}
+		accel = 0.01f;
+
 		//set movespeed
 		if (keyboard->IsKeyDown(DIK_W)) {
 			Speed = 4;
 		}
 
 		if (keyboard->IsKeyDown(DIK_S)) {
-			Speed = -4;
+			Speed = -2;
+			accel = 0.0001f;
+		}
+
+		//this will force the player to move forwards when boosting
+		if (keyboard->IsKeyHeldDown(DIK_K) && boostPow > 0) {
+			boostMod = 1.5f;
+			SetBoost(boostPow - 0.1f);
+			Speed = 8;
+			accel = 0.01f;
 		}
 
 		//set turn velocity
@@ -149,5 +173,9 @@ namespace Rendering {
 					(_a.z - _b.z) * (_a.z - _b.z)
 				)
 			);
+	}
+
+	void PlayerObject::SetBoost(float b) {
+		boostPow = b;
 	}
 }

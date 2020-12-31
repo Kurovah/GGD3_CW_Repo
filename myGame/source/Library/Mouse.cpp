@@ -75,26 +75,63 @@ namespace Library
 
     void Mouse::Update(const GameTime& gameTime)
     {
-        if (mDevice != nullptr)
-        {
-            memcpy(&mLastState, &mCurrentState, sizeof(mCurrentState));
+		if (mDevice != nullptr)
+		{
+			memcpy(&mLastState, &mCurrentState, sizeof(mCurrentState));
 
-            if (FAILED(mDevice->GetDeviceState(sizeof(mCurrentState), &mCurrentState)))
-            {
-                // Try to reaqcuire the device
-                if (SUCCEEDED(mDevice->Acquire()))
-                {
-                    if (FAILED(mDevice->GetDeviceState(sizeof(mCurrentState), &mCurrentState)))
-                    {
-                        return;
-                    }	
-                }
-            }
+			if (FAILED(mDevice->GetDeviceState(sizeof(mCurrentState), &mCurrentState)))
+			{
+				// Try to reaqcuire the device
+				if (SUCCEEDED(mDevice->Acquire()))
+				{
+					if (FAILED(mDevice->GetDeviceState(sizeof(mCurrentState), &mCurrentState)))
+					{
+						return;
+					}
+				}
+			}
 
-            // Accumulate positions
-            mX += mCurrentState.lX;
-            mY += mCurrentState.lY;
-            mWheel += mCurrentState.lZ;
+			// Accumulate positions
+
+			if (!outOfBounds) {
+				mX += mCurrentState.lX;
+				mY += mCurrentState.lY;
+				mWheel += mCurrentState.lZ;
+			}
+			mX2 += mCurrentState.lX;
+			mY2 += mCurrentState.lY;
+
+			if (mX2 > GetSystemMetrics(SM_CXSCREEN) + mGame->windowCenter.x) {
+				mX2 = GetSystemMetrics(SM_CXSCREEN) + mGame->windowCenter.x;
+			}
+			if (mY2 > GetSystemMetrics(SM_CXSCREEN) + mGame->windowCenter.y) {
+				mY2 = GetSystemMetrics(SM_CXSCREEN) + mGame->windowCenter.y;
+			}
+			if (mX2 < 0 + mGame->windowCenter.x) {
+				mX2 = 0 + mGame->windowCenter.x;
+			}
+			if (mY2 < 0 + mGame->windowCenter.y) {
+				mY2 = 0 + mGame->windowCenter.y;
+			}
+
+			if (mX2> 1280 || mX2 < 0 || mY2 > 720 || mY2 < 0) {
+				outOfBounds = true;
+				if (mX > 1280) {
+					mX = 1280;
+				}
+				if (mY > 720) {
+					mX = 720;
+				}
+				if (mX < 0) {
+					mX = 0;
+				}
+				if (mY < 0) {
+					mX = 0;
+				}
+			}
+			else {
+				outOfBounds = false;
+			}
         }
     }
 

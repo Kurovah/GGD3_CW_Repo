@@ -13,7 +13,7 @@ namespace Library
     public:
         Game(HINSTANCE instance, const std::wstring& windowClass, const std::wstring& windowTitle, int showCommand);
         virtual ~Game();
-
+		
         HINSTANCE Instance() const;
         HWND WindowHandle() const;
         const WNDCLASSEX& Window() const; 
@@ -26,6 +26,8 @@ namespace Library
         ID3D11DeviceContext1* Direct3DDeviceContext() const;
         bool DepthBufferEnabled() const;
         float AspectRatio() const;
+		float& Boost();
+		void SetBoost(float _a);
         bool IsFullScreen() const;
         const D3D11_TEXTURE2D_DESC& BackBufferDesc() const;
         const D3D11_VIEWPORT& Viewport() const;
@@ -39,12 +41,13 @@ namespace Library
         virtual void Update(const GameTime& gameTime);
         virtual void Draw(const GameTime& gameTime);
 		void AddObject(GameComponent* object);
-
+		POINT windowCenter;
+		HWND window;
 
 		static bool toPick;
 		static int screenX;
 		static int screenY;
-		
+		float boost;
 
 
 
