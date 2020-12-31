@@ -12,6 +12,7 @@
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
+  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\ShipFINAL.obj
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV2.3ds
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV3.obj
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Models\SHIPV4.3ds
@@ -24,12 +25,10 @@
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
-  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColour.jpg
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV.jpg
-  C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV2.jpg
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\Sky.png
   C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\..\content\Textures\sky2.png
-  30 File(s) copied
+  29 File(s) copied
   Scene.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Game.vcxproj -> C:\Users\bryan\OneDrive\Desktop\GGD3_CW_Repo\myGame\build\Debug\Game.exe

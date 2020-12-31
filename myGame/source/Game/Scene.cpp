@@ -16,7 +16,7 @@ namespace Rendering{
 		player = new PlayerObject(game, camera, XMFLOAT3(0, 5, 10), XMFLOAT3(0, 0, 0), 10.0f, "Content\\Models\\Skybox1.obj", "Content\\Textures\\sky2.png", collisionPoints);
 		objects.push_back(player);
 		//Skybox attached to player camera
-		player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.40f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
+		player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.40f, "Content\\Models\\ShipFINAL.obj", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
 		objects.push_back(player);
 
 		switch (type) {
