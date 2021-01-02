@@ -58,11 +58,11 @@ namespace Rendering {
 
 		//set movespeed
 		if (keyboard->IsKeyDown(DIK_W)) {
-			Speed = 4;
+			Speed = 10;
 		}
 
 		if (keyboard->IsKeyDown(DIK_S)) {
-			Speed = -2;
+			Speed = -5;
 			accel = 0.0001f;
 		}
 
@@ -70,7 +70,7 @@ namespace Rendering {
 		if (keyboard->IsKeyHeldDown(DIK_K) && boostPow > 0) {
 			boostMod = 1.5f;
 			SetBoost(boostPow - 0.1f);
-			Speed = 8;
+			Speed = 16;
 			accel = 0.01f;
 		}
 
