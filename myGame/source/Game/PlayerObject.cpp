@@ -58,11 +58,11 @@ namespace Rendering {
 
 		//set movespeed
 		if (keyboard->IsKeyDown(DIK_W)) {
-			Speed = 10;
+			Speed = 30;
 		}
 
 		if (keyboard->IsKeyDown(DIK_S)) {
-			Speed = -5;
+			Speed = -30;
 			accel = 0.0001f;
 		}
 
