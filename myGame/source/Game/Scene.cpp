@@ -41,7 +41,6 @@ namespace Rendering{
 	
 			//Skybox
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 5.0f, "Content\\Models\\testSkyBox.obj", "Content\\Textures\\skyBoxUV.png"));
-<<<<<<< HEAD
 
 			//Track Pieces
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
@@ -65,10 +64,7 @@ namespace Rendering{
 			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT2(4, 4)));
 
 			//Player
-			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.75f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
-=======
-			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.50f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
->>>>>>> Daniel
+			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.75f, "Content\\Models\\ShipV2.obj", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
 			objects.push_back(player);
 			
 
