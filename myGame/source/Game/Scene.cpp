@@ -30,7 +30,7 @@ namespace Rendering{
 
 		case 1://track selection
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(100, 100), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "To Track 1", 1));
-			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(100, 200), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "To Track 2", 2));
+			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(100, 240), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "To Track 2", 2));
 			break;
 		case 2://track 1
 			//add collision like this
@@ -39,7 +39,7 @@ namespace Rendering{
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-5, 0, -5), XMFLOAT3(5, 0, -5)));
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(5, 0, -5), XMFLOAT3(5, 0, 5)));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 5.0f, "Content\\Models\\testSkyBox.obj", "Content\\Textures\\skyBoxUV.png"));
-			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.75f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
+			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.50f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
 			objects.push_back(player);
 			objects.push_back(new FinishLine(game, camera, XMFLOAT3(5, 0, 5), XMFLOAT2(4, 4)));
 
@@ -58,7 +58,7 @@ namespace Rendering{
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-5, 0, -5), XMFLOAT3(5, 0, -5)));
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(5, 0, -5), XMFLOAT3(5, 0, 5)));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 5.0f, "Content\\Models\\testSkyBox.obj", "Content\\Textures\\skyBoxUV.png"));
-			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.01f, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg", collisionPoints);
+			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\player_ship.obj", "Content\\Textures\\shipUVs.png", collisionPoints);
 			objects.push_back(player);
 			objects.push_back(new FinishLine(game, camera, XMFLOAT3(5, 0, 5), XMFLOAT2(4, 4)));
 
