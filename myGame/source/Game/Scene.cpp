@@ -84,6 +84,9 @@ namespace Rendering {
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-6, 0, -109.5), XMFLOAT3(-4, 1, -111.5)));
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-7, 0, -107.5), XMFLOAT3(-6, 1, -109.5)));
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-8, 0, -105.5), XMFLOAT3(-7, 1, -107.5)));
+
+			//Collsions - Prevent player from going to finishline from start
+			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-8, 0, -8), XMFLOAT3(8, 1, -8)));
 #pragma endregion
 
 			//Skybox
@@ -108,16 +111,34 @@ namespace Rendering {
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -67.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -45.0), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Finishline_Track.obj", "Content\\Textures\\Finishline_Track.png"));
-			objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT2(1, 1)));
+			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT2(4, 4)));
 
 			//Player
 			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.50f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
 			objects.push_back(player);
 
 			//Boost Boxes
-			objects.push_back(new Interactable(game, camera, XMFLOAT3(4, 1, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
-			//objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
-			//objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, 20), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, -80), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, -60), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, -40), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(25, 1, 40), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(50, 1, 47), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(75, 1, 44), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(100, 1, 41), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(128, 1, 20), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(134, 1, 0), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(131, 1, -20), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(126, 1, -40), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(131, 1, -60), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(129, 1, -80), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(100, 1, -113), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(75, 1, -110), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(50, 1, -107), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(25, 1, -113), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
 
 
 

@@ -39,7 +39,7 @@ namespace Rendering {
 	}
 
 	void Interactable::ActivateTrigger() {
-		mPlayer->SetBoost(mPlayer->boostPow+5);
+		mPlayer->SetBoost(mPlayer->boostPow+25);
 		Disable();
 	}
 }
