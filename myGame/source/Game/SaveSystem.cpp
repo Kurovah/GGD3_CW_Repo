@@ -88,7 +88,7 @@ namespace Rendering {
 				break;
 
 			case 1:
-				return "Content\\Models\\ShipFinal.obj";
+				return "Content\\Models\\ShipV3.obj";
 				break;
 			default:
 				return  "Content\\Models\\player_ship.obj";
@@ -133,7 +133,7 @@ namespace Rendering {
 			break;
 
 		case 1:
-			return 0.5f;
+			return 0.4f;
 			break;
 		default:
 			return  1;

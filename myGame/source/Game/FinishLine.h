@@ -8,7 +8,7 @@ namespace Rendering {
 	{
 	public:
 		XMFLOAT2 triggerScale;
-		bool intersecting,lastIn;
+		bool intersecting,lastIn,active;
 		int currentState = 0;
 		FinishLine(Game& _game, Camera& _camera, XMFLOAT3 translate,XMFLOAT2 scale);
 		~FinishLine();

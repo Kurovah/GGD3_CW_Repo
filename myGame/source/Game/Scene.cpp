@@ -35,7 +35,8 @@ namespace Rendering{
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(640, 552), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Ship Type 2", 6));
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(916, 10), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Back to main", 3));
 			break;
-		case 2://track 1
+		case 2:
+			//track 1
 			//add collision like this
 			/*collisionPoints.push_back(new CollisionLine(XMFLOAT3(6, 0, 6), XMFLOAT3(-6, 0, 6)));
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-6, 0, 6), XMFLOAT3(-6, 0, -6)));
@@ -64,7 +65,7 @@ namespace Rendering{
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -67.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -45.0), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Finishline_Track.obj", "Content\\Textures\\Finishline_Track.png"));
-			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT2(4, 4)));
+			objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT2(6, 4)));
 
 			//Player
 			player = new PlayerObject(game, camera, XMFLOAT3(0, 0.5f, 0), XMFLOAT3(0, 0, 0), SaveSystem::GetCurrentScale(), SaveSystem::GetCurrentCar(), SaveSystem::GetCurrentTexture(), collisionPoints);
@@ -72,8 +73,7 @@ namespace Rendering{
 			
 
 			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
-			//testFloor = new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
-			//objects.push_back(testFloor);
+			
 			
 
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
@@ -90,10 +90,9 @@ namespace Rendering{
 			objects.push_back(player);
 			objects.push_back(new FinishLine(game, camera, XMFLOAT3(5, 0, 5), XMFLOAT2(4, 4)));
 
-			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
-			testFloor = new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(4, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			testFloor = new GameObject(game, camera, XMFLOAT3(5, 0, 5), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
 			objects.push_back(testFloor);
-			
 
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
 			sceneSprites.push_back(new Sprite(game, camera, XMFLOAT2(0, 0), XMFLOAT2(1, 1), "Content\\Textures\\BoostBar.png"));
