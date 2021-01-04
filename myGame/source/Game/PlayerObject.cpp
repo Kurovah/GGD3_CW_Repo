@@ -45,6 +45,7 @@ namespace Rendering {
 	{
 		float Speed = 0;
 		float _turnVel = 0;
+		float turnMod = 0;
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 		XMFLOAT3 _fv;
 		XMVECTOR _pos = XMLoadFloat3(&position);
@@ -58,7 +59,7 @@ namespace Rendering {
 
 		//set movespeed
 		if (keyboard->IsKeyDown(DIK_W)) {
-			Speed = 10;
+			Speed = 15;
 		}
 
 		if (keyboard->IsKeyDown(DIK_S)) {
@@ -70,23 +71,25 @@ namespace Rendering {
 		if (keyboard->IsKeyHeldDown(DIK_K) && boostPow > 0) {
 			boostMod = 1.5f;
 			SetBoost(boostPow - 0.1f);
-			Speed = 16;
+			Speed = 30;
+			turnMod = 0.2f;
 			accel = 0.01f;
 			CamOffset.x = lerp(CamOffset.x, 8, 0.01f);
 			CamOffset.y = lerp(CamOffset.y, 3.5f, 0.01f);
 		}
 		else {
+			turnMod = 0.0f;
 			CamOffset.x = lerp(CamOffset.x, 6, 0.01f);
 			CamOffset.y = lerp(CamOffset.y, 3, 0.01f);
 		}
 
 		//set turn velocity
 		if (keyboard->IsKeyDown(DIK_A)) {
-			_turnVel = 0.5f ;
+			_turnVel = 0.5f - turnMod;
 		}
 		
 		if (keyboard->IsKeyDown(DIK_D)) {
-			_turnVel = -0.5f;
+			_turnVel = -(0.5f - turnMod);
 		}
 
 		velocity = lerp(velocity,Speed,0.01f);

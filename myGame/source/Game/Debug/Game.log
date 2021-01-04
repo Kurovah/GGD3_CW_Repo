@@ -51,35 +51,8 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK1.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK2.png
   51 File(s) copied
-  Scene.cpp
+  PlayerObject.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(48,91): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(49,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(50,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(50,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(51,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(51,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(52,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(52,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(53,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(54,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(54,97): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,98): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(60,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,102): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(63,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,95): warning C4305: 'argument': truncation from 'double' to 'float'
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
