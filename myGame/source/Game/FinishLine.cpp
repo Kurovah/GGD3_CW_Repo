@@ -15,27 +15,16 @@ namespace Rendering {
 
 	void FinishLine::Update(const GameTime& gameTime)
 	{
-		intersecting = PlayerIsInside();
-		
-		if (!active) {
-			if (!intersecting && lastIn) {
-				active = true;
+		if (PlayerIsInside()) {
+			RenderingGame* _g = (RenderingGame*)mGame;
+			//only save the time if the current one is less
+			if (SaveSystem::GetBestTime(_g->queuedScene - 2) > _g->mTimer->currentTime)
+			{
+				SaveSystem::SaveBestTime(_g->mTimer->currentTime, _g->queuedScene - 2);
 			}
+			_g->queuedScene = 1;
+			_g->ChangeRequest = true;
 		}
-		else {
-			if (intersecting && !lastIn) {
-				RenderingGame* _g = (RenderingGame*)mGame;
-				//only save the time if the current one is less
-				if (SaveSystem::GetBestTime(_g->queuedScene - 2) > _g->mTimer->currentTime)
-				{
-					SaveSystem::SaveBestTime(_g->mTimer->currentTime, _g->queuedScene - 2);
-				}
-				_g->queuedScene = 1;
-				_g->ChangeRequest = true;
-			}
-		}
-		
-		lastIn = intersecting;
 	}
 
 	bool FinishLine::PlayerIsInside() {
