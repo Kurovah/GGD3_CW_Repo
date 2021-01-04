@@ -1,136 +1,222 @@
-﻿  A subdirectory or file C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content already exists.
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.cso
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.fx
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\DiffuseLighting.fx
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\Skybox.fx
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.cso
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.fx
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\include\Common.fxh
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\bench.3ds
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\boostBox.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Corner_Track.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\cube.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Finishline_Track.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\player_ship.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipFINAL.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV2.3ds
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV3.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SHIPV4.3ds
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Skybox1.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SkyboxV2.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Straight_Track.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\testSkyBox.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBar.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBarBack.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBoxTexture.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\ButtonBack.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Corner_Track.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\FinalColor.jpg
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Finishline_Track.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV.jpg
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\shipUVs.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Sky.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\sky2.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\skyBoxUV.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Straight_Track.png
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
-  45 File(s) copied
-  Scene.cpp
+﻿  A subdirectory or file C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Content already exists.
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.cso
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\BasicEffect.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\DiffuseLighting.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\Skybox.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.cso
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\TextureMapping.fx
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Effects\include\Common.fxh
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Fonts\Arial_14_Regular.spritefont
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\bench.3ds
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\boostBox.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Corner_Track.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\cube.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.mtl
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\DirectionalLightProxy.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Finishline_Track.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\house.3DS
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\player_ship.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipFINAL.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV2.3ds
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV3.mtl
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\ShipV3.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SHIPV4.3ds
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Skybox1.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\SkyboxV2.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\Straight_Track.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\testSkyBox.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\tutFloor.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Models\weird.obj
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\bench.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBar.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBarBack.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBoxTexture.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\ButtonBack.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Corner_Track.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\FadeOut.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\FinalColor.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Finishline_Track.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\grass.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\house.bmp
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\OVDRIVELOGO.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\RESETSAVE.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\ShipColourUV.jpg
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\shipUVs.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Sky.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\sky2.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\skyBoxUV.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\START.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Straight_Track.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK1.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK2.png
+  52 File(s) copied
+  BoostBarSprite.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(35,73): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(36,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(36,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(37,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(54,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(63,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(63,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(66,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(66,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(83,91): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(84,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(85,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(85,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(86,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(86,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(87,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(87,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(88,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(89,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(89,97): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(90,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(90,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(91,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(91,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(92,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(92,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(93,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(93,98): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(94,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(95,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(96,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(97,102): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(98,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(99,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(100,95): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(146,70): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(146,94): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(148,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(149,73): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(149,98): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(150,78): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(150,103): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(151,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(151,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(152,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(152,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(153,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(154,97): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(155,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(156,99): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(157,100): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(158,98): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(159,101): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(171,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(172,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(173,75): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(174,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(175,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(176,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(177,78): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(178,78): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(179,78): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(180,78): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(181,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(182,79): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(183,79): warning C4305: 'argument': truncation from 'double' to 'float'
-  Game.vcxproj -> C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
-  C:\Users\Omar.GAMERSDELIGHT\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
+  Button.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(17,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Canvas.cpp
+  CollisionLine.cpp
+  DiffuseLightingMaterial.cpp
+  FinishLine.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(18,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(18,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(18,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Button.cpp(18,19): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+  GameObject.cpp
+  Interactable.cpp
+  ModelFromFile.cpp
+  ObjectDiffuseLight.cpp
+  PlayerObject.cpp
+  Program.cpp
+  RenderingGame.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\FinishLine.cpp(31,41): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+  SaveSystem.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
+  Scene.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: The contents of <filesystem> are only available with C++17 or later.
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(38,73): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(39,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(39,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(40,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(60,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(60,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(66,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(66,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(67,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(67,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(68,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(68,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(69,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(69,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(85,91): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(86,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(87,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(87,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(88,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(88,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(89,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(89,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(90,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(91,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(91,97): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(92,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(92,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(93,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(93,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(94,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(94,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(95,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(95,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(96,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(97,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(98,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(99,102): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(100,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(101,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(102,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(151,70): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(151,94): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(153,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(154,73): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(154,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(155,78): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(155,103): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(156,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(156,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(157,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(157,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(158,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(159,97): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(160,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(161,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(162,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(163,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(164,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(174,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(175,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(176,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(177,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(178,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(179,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(180,78): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(181,78): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(182,78): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(183,78): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(184,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(185,79): warning C4305: 'argument': truncation from 'double' to 'float'
+  Sprite.cpp
+  Timer.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(186,79): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(186,79): warning C4305: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(186,79): warning C4305: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(18,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(19,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  TimerSprite.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(24,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Timer.cpp(24,36): warning C4244: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  TriangleDemo.cpp
+  Generating Code...
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+Libraryd.lib(BasicMaterial.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(BasicMaterial.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Camera.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Camera.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(DirectionalLight.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(DirectionalLight.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(DrawableGameComponent.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(DrawableGameComponent.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Effect.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Effect.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(FirstPersonCamera.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(FirstPersonCamera.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(FpsComponent.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(FpsComponent.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Game.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Game.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(GameClock.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(GameClock.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(GameComponent.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(GameComponent.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(GameException.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(GameException.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(GameTime.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(GameTime.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Keyboard.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Keyboard.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Light.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Light.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Material.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Material.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(MatrixHelper.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(MatrixHelper.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Mesh.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Mesh.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Model.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Model.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(ModelMaterial.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(ModelMaterial.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Mouse.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Mouse.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Pass.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Pass.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(ProxyModel.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(ProxyModel.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(RasterizerStates.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(RasterizerStates.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(RenderStateHelper.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(RenderStateHelper.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(SamplerStates.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(SamplerStates.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(ServiceContainer.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(ServiceContainer.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Technique.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Technique.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Utility.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Utility.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(Variable.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(Variable.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+Libraryd.lib(VectorHelper.obj) : warning LNK4099: PDB 'Library.pdb' was not found with 'Libraryd.lib(VectorHelper.obj)' or at 'C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Library.pdb'; linking object as if no debug info
+  Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
