@@ -14,15 +14,8 @@
 namespace Rendering {
 	Scene::Scene(Game& game, Camera& camera, int type) :testObj(nullptr), testFloor(nullptr) {
 
-
-
-
-
-
-
 		switch (type) {
 		case 0://main menu
-
 
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(458, 420), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Start", 0));
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(458, 560), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "ResetSaves", 4));
@@ -34,14 +27,8 @@ namespace Rendering {
 			break;
 
 		case 2://track 1
-			//add collision like this
-			/*collisionPoints.push_back(new CollisionLine(XMFLOAT3(6, 0, 6), XMFLOAT3(-6, 0, 6)));
-			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-6, 0, 6), XMFLOAT3(-6, 0, -6)));
-			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-6, 0, -6), XMFLOAT3(6, 0, -6)));
-			collisionPoints.push_back(new CollisionLine(XMFLOAT3(6, 0, -6), XMFLOAT3(6, 0, 6)));*/
 
-			//collisionPoints.push_back(new CollisionLine(XMFLOAT3(-8, 0, -8), XMFLOAT3(-8, 0, 10)));
-			//collisionPoints.push_back(new CollisionLine(XMFLOAT3(-6, 0, 22), XMFLOAT3(-22, 0, 42.75)));
+			//Collisions
 #pragma region Collisions			
 			//Collisions - Outer ring
 			collisionPoints.push_back(new CollisionLine(XMFLOAT3(-8, 0, 6), XMFLOAT3(-8, 1, -110)));
@@ -111,7 +98,7 @@ namespace Rendering {
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -67.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -45.0), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Finishline_Track.obj", "Content\\Textures\\Finishline_Track.png"));
-			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, -22.5), XMFLOAT2(4, 4)));
+			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 0, 1), XMFLOAT2(4, 4)));
 
 			//Player
 			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.50f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
@@ -141,7 +128,7 @@ namespace Rendering {
 			objects.push_back(new Interactable(game, camera, XMFLOAT3(25, 1, -113), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
 
 
-
+			//UI
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
 			sceneSprites.push_back(new Sprite(game, camera, XMFLOAT2(0, 0), XMFLOAT2(1, 1), "Content\\Textures\\BoostBar.png"));
 			sceneSprites.push_back(new TimerSprite(game, camera, XMFLOAT2(916, 0), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png"));
@@ -156,19 +143,46 @@ namespace Rendering {
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 5.0f, "Content\\Models\\testSkyBox.obj", "Content\\Textures\\skyBoxUV.png"));
 
 			//Track Pieces
-			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(0, 0, 0.04), XMFLOAT3(0, 1.5708, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
 			objects.push_back(new GameObject(game, camera, XMFLOAT3(-20.25, 0, 42.75), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\Corner_Track.obj", "Content\\Textures\\Corner_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(-42.75, 0, 42.75), XMFLOAT3(0, 3.14159, 0), 1.0f, "Content\\Models\\Corner_Track.obj", "Content\\Textures\\Corner_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(-63, 0, 85.46), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Corner_Track.obj", "Content\\Textures\\Corner_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(-20.25, 0, 105.725), XMFLOAT3(0, 3.14159, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(2.25, 0, 105.725), XMFLOAT3(0, 3.14159, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(24.5, 0, 105.725), XMFLOAT3(0, 3.14159, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(47.0, 0, 105.725), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\Corner_Track.obj", "Content\\Textures\\Corner_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, 63), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, 40.75), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, 18.5), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, -3.75), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, -26), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Straight_Track.obj", "Content\\Textures\\Straight_Track.png"));
+			objects.push_back(new GameObject(game, camera, XMFLOAT3(67.25, 0, -48.25), XMFLOAT3(0, 4.71239, 0), 1.0f, "Content\\Models\\Finishline_Track.obj", "Content\\Textures\\Finishline_Track.png"));
+			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(0, 1, 0), XMFLOAT2(4, 4)));
 
-
-			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.01f, "Content\\Models\\bench.3ds", "Content\\Textures\\bench.jpg", collisionPoints);
+			player = new PlayerObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 0.50f, "Content\\Models\\ShipV2.3ds", "Content\\Textures\\ShipColourUV.jpg", collisionPoints);
 			objects.push_back(player);
-			//objects.push_back(new FinishLine(game, camera, XMFLOAT3(5, 0, 5), XMFLOAT2(4, 4)));
 
-			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 0, 4), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
-			//testFloor = new GameObject(game, camera, XMFLOAT3(0, 0, 0), XMFLOAT3(0, 0, 0), 1.0f, "Content\\Models\\tutFloor.obj", "Content\\Textures\\grass.jpg");
-			//objects.push_back(testFloor);
+			//Boost Boxes
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, 15), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-20, 1, 42.75), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-40, 1, 42.75), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-63, 1, 85), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-63, 1, 65), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-40, 1, 105.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(-20, 1, 110.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(0, 1, 100.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(20, 1, 105.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(40, 1, 110.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(55, 1, 105.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(62.25, 1, 85.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(64.25, 1, 65.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(66.25, 1, 45.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(68.25, 1, 25.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(65.25, 1, 5.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(65.25, 1, -15.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
+			objects.push_back(new Interactable(game, camera, XMFLOAT3(65.25, 1, -35.725), XMFLOAT3(0, 0, 0), 0.5f, "Content\\Models\\boostBox.obj", "Content\\Textures\\BoostBoxTexture.png"));
 
-
+			//UI
 			sceneSprites.push_back(new BoostBarSprite(game, camera, XMFLOAT2(18, 16), XMFLOAT2(1, 1), "Content\\Textures\\BoostBarBack.png"));
 			sceneSprites.push_back(new Sprite(game, camera, XMFLOAT2(0, 0), XMFLOAT2(1, 1), "Content\\Textures\\BoostBar.png"));
 			sceneSprites.push_back(new TimerSprite(game, camera, XMFLOAT2(916, 0), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png"));
