@@ -73,6 +73,7 @@ namespace Rendering {
 			SetBoost(boostPow - 0.1f);
 			Speed = 30;
 			turnMod = 0.2f;
+
 			accel = 0.01f;
 			CamOffset.x = lerp(CamOffset.x, 8, 0.01f);
 			CamOffset.y = lerp(CamOffset.y, 3.5f, 0.01f);
