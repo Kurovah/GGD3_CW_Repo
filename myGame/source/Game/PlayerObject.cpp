@@ -35,7 +35,7 @@ namespace Rendering {
 		keyboard = (Keyboard*)mGame->Services().GetService(Keyboard::TypeIdClass());
 		mCamera = (Camera*)mGame->Services().GetService(Camera::TypeIdClass());
 		forwardVec = Vector3Helper::Backward;
-		CamOffset = XMFLOAT2(4,2.5f);
+		CamOffset = XMFLOAT2(6,3.0f);
 		velocity = 0;
 		angVelocity = 0;
 		GameObject::Initialize();
@@ -72,6 +72,12 @@ namespace Rendering {
 			SetBoost(boostPow - 0.1f);
 			Speed = 16;
 			accel = 0.01f;
+			CamOffset.x = lerp(CamOffset.x, 8, 0.01f);
+			CamOffset.y = lerp(CamOffset.y, 3.5f, 0.01f);
+		}
+		else {
+			CamOffset.x = lerp(CamOffset.x, 6, 0.01f);
+			CamOffset.y = lerp(CamOffset.y, 3, 0.01f);
 		}
 
 		//set turn velocity

@@ -40,14 +40,105 @@ namespace Rendering {
 				file.close();
 			}
 		}
+
+		//for the car
+		std::ifstream check2("./Content/Saves/CurrentCar.txt");
+		if (!check2) {
+			std::ofstream file2;
+
+			file2.open("./Content/Saves/CurrentCar.txt");
+			file2 << 0 << std::endl;
+			file2.close();
+		}
 	}
 
 	void SaveSystem::ResetSaves() {
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 1; i++) {
 			std::ofstream file;
 			file.open("./Content/Saves/Save" + std::to_string(i) + ".txt");
 			file << 9999 << std::endl;
 			file.close();
 		}
+
+		std::ofstream file2;
+
+		file2.open("./Content/Saves/CurrentCar.txt");
+		file2 << 0 << std::endl;
+		file2.close();
 	}
+
+	void SaveSystem::SaveCurrentCar(int car) {
+		std::ofstream file2;
+		file2.open("./Content/Saves/CurrentCar.txt");
+		file2 << car << std::endl;
+		file2.close();
+	}
+
+	std::string SaveSystem::GetCurrentCar() {
+		std::string car;
+		std::string line;
+		std::ifstream file("./Content/Saves/CurrentCar.txt");
+		car.assign((std::istreambuf_iterator<char>(file)), (std::istreambuf_iterator<char>()));
+
+		int toReturn = stoi(car);
+
+		switch (toReturn) {
+			case 0:
+				return  "Content\\Models\\player_ship.obj";
+				break;
+
+			case 1:
+				return "Content\\Models\\ShipFinal.obj";
+				break;
+			default:
+				return  "Content\\Models\\player_ship.obj";
+				break;
+		}
+		
+	}
+	std::string SaveSystem::GetCurrentTexture() {
+		std::string car;
+		std::string line;
+		std::ifstream file("./Content/Saves/CurrentCar.txt");
+		car.assign((std::istreambuf_iterator<char>(file)), (std::istreambuf_iterator<char>()));
+
+		int toReturn = stoi(car);
+
+		switch (toReturn) {
+		case 0:
+			return  "Content\\Textures\\shipUVs.png";
+			break;
+
+		case 1:
+			return "Content\\Textures\\ShipColourUV.jpg";
+			break;
+		default:
+			return  "Content\\Textures\\shipUVs.png";
+			break;
+		}
+	}
+
+
+	float SaveSystem::GetCurrentScale() {
+		std::string car;
+		std::string line;
+		std::ifstream file("./Content/Saves/CurrentCar.txt");
+		car.assign((std::istreambuf_iterator<char>(file)), (std::istreambuf_iterator<char>()));
+
+		int toReturn = stoi(car);
+
+		switch (toReturn) {
+		case 0:
+			return  1;
+			break;
+
+		case 1:
+			return 0.5f;
+			break;
+		default:
+			return  1;
+			break;
+		}
+	}
+	
 }

@@ -39,10 +39,13 @@ namespace Rendering {
 	}
 
 	void Button::Draw(const GameTime& gameTime, SpriteBatch* spriteBatch) {
-		Sprite::Draw(gameTime,spriteBatch);
-		std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
-		const std::wstring btext = converter.from_bytes(buttonText);
-		mSpriteFont->DrawString(spriteBatch, btext.c_str(), XMFLOAT2(spritePosition.x + 15, spritePosition.y +15),Colors::White,0.0f,XMFLOAT2(0,0), XMFLOAT2(2, 2));
+		Sprite::Draw(gameTime, spriteBatch);
+
+		if (buttonType == 5 || buttonType == 6) {
+			std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+			const std::wstring btext = converter.from_bytes(buttonText);
+			mSpriteFont->DrawString(spriteBatch, btext.c_str(), XMFLOAT2(spritePosition.x + 25, spritePosition.y + 15), Colors::White, 0.0f, XMFLOAT2(0, 0), XMFLOAT2(2, 2));
+		}
 	}
 
 	void Button::ActivateButton() {
@@ -67,6 +70,12 @@ namespace Rendering {
 				break;
 			case 4://reset saves
 				SaveSystem::ResetSaves();
+				break;
+			case 5://change to ship 1
+				SaveSystem::SaveCurrentCar(0);
+				break;
+			case 6://change to ship 2
+				SaveSystem::SaveCurrentCar(1);
 				break;
 		}
 		
