@@ -33,6 +33,7 @@ namespace Rendering{
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(640, 312), XMFLOAT2(1, 1), "Content\\Textures\\TRACK2.png", "To Track 2", 2));
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(276, 432), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "ShipType 1", 5));
 			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(640, 552), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Ship Type 2", 6));
+			sceneSprites.push_back(new Button(game, camera, XMFLOAT2(916, 10), XMFLOAT2(1, 1), "Content\\Textures\\ButtonBack.png", "Back to main", 3));
 			break;
 		case 2://track 1
 			//add collision like this

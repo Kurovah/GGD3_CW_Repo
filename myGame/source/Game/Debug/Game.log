@@ -33,6 +33,7 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\BoostBoxTexture.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\ButtonBack.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Corner_Track.png
+  C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\FadeOut.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\FinalColor.jpg
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\Finishline_Track.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\GearTex.001.png
@@ -50,9 +51,43 @@
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\testSprite.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK1.png
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\content\Textures\TRACK2.png
-  51 File(s) copied
-  PlayerObject.cpp
+  52 File(s) copied
+  Canvas.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  RenderingGame.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+  Scene.cpp
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: 'Library::FirstPersonCamera': object allocated on the heap may not be aligned 16
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\RenderingGame.cpp(82,41): warning C4316: C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\SaveSystem.h(17,3): warning C4091: 'static ': ignored on left of 'Rendering::SaveSystem' when no variable is declared
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(49,91): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(50,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(51,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(51,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(52,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(52,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(53,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(53,100): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(54,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(55,97): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(56,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(57,99): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(58,101): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(59,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(60,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(61,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(62,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(63,102): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(64,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(65,95): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\source\Game\Scene.cpp(66,95): warning C4305: 'argument': truncation from 'double' to 'float'
   Game.vcxproj -> C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\Debug\Game.exe
   C:\Users\danny\Documents\GitHub\GGD3_CW_Repo\myGame\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.
